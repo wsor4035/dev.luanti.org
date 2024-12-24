@@ -274,8 +274,8 @@ Now you are all done and ready to share your texture pack. There's a few things 
 There are numerous places that run and use Git (or equivalent software) as a place for uploading your files. The beauty of Git is it gives you version control and allows other users of Luanti to download and potentially add to your work in the future. Git is probably the best option for sharing texture packs however it can be a bit challenging to set up initially. Popular providers include:
 
 *   [Github](http://github.com/) - owned by Microsoft now
-*   [notabug](http://notabug.org/) - run by Peers (essentially open community)
-*   [Gitlab](http://about.gitlab.com/) - Somewhere between Github and notabug
+*   [Codeberg](https://codeberg.org/) - community-led effort
+*   [Gitlab](http://about.gitlab.com/) - Somewhere between Github and Codeberg
 *   [and many more...](http://en.wikipedia.org/wiki/Comparison_of_source-code-hosting_facilities)
 
 ### ContentDB
