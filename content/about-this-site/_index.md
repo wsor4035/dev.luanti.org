@@ -11,5 +11,6 @@ The sites source content can be found [here](https://github.com/minetest/dev.lua
 ## Contributing
 
 * [Making Changes](/about-this-site/making-changes/)
+* [Guidelines](/about-this-site/guidelines/)
 * [Setting up & running the site locally](/about-this-site/local-development/)
 * [Rules](/about-this-site/rules/)
