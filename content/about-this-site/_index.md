@@ -14,3 +14,13 @@ The sites source content can be found [here](https://github.com/minetest/dev.lua
 * [Guidelines](/about-this-site/guidelines/)
 * [Setting up & running the site locally](/about-this-site/local-development/)
 * [Rules](/about-this-site/rules/)
+
+# Mission Statement
+
+Luanti Documentation will be the central resource for the Luanti project as a whole where contributors and writers collaborate to author well-tested, understandable, categorized, and searchable information based on the current state of the Luanti engine. Documentation will cover:
+
+* Comprehensive API reference, examples, and guides
+* Engine reference and internal structures
+* Server and platform (player-facing) usage and guides
+
+Our Roadmap can be found in the following [issue](https://github.com/minetest/dev.luanti.org/issues/113).
