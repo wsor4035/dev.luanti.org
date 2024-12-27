@@ -23,4 +23,4 @@ Luanti Documentation will be the central resource for the Luanti project as a wh
 * Engine reference and internal structures
 * Server and platform (player-facing) usage and guides
 
-Our Roadmap can be found in the following [issue](https://github.com/minetest/dev.luanti.org/issues/113).
+Our Roadmap can be found at [this issue](https://github.com/minetest/dev.luanti.org/issues/113).
