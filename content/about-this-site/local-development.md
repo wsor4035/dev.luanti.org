@@ -7,6 +7,7 @@ title: Local Development
 _(anyone)_
 
 To build locally, you will need to first [install Hugo](https://gohugo.io/installation/).
+* Note, you need the extended version
 
 When cloning the repository you need to clone it recursively so that the theme submodule gets included:
 
