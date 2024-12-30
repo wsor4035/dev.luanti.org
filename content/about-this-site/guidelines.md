@@ -28,3 +28,4 @@ if you have moved the markdown file from another location, add the [`alias`](htt
 
 * Content must be in markdown
 * webp images are encouraged, but not currently required
+* Code blocks should have a [language](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) for syntax highlighting
