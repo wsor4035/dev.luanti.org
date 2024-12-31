@@ -2,6 +2,7 @@
 title: Setting up a server
 aliases:
 - /Setting_up_a_server
+- /Setting_up_a_server/Debian
 ---
 
 # Setting up a server
