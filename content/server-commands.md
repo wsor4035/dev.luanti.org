@@ -62,27 +62,27 @@ If you append `-t` to the command (with the space), the commands will be listed 
 
 #### Informational
 
-* `/privs [<player>]`—List of privileges granted to <player>, if not specified, your own privileges
+* `/privs [<player>]`—List of privileges granted to `<player>`, if not specified, your own privileges
 * `/haspriv <privilege>`—List all online players that have the specified privilege
-* `/last-login [<player>]`—Show the date and time when <player> has logged in the last time into this server ([UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) time zone, [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format). If not specified, shows your own last login time
+* `/last-login [<player>]`—Show the date and time when `<player>` has logged in the last time into this server ([UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) time zone, [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format). If not specified, shows your own last login time
 
 #### Chat
 
 These commands require the “shout” privilege to work.
 
-* `/msg <player> <message>`—Send a direct message <message> to <player>; but not to the other players. **Note**: The message is not really secret. Anyone intercepting the network traffic and the server operator could still, in principle, read it
-* `/me <action>`—Makes a text in the format “\* <your name> <action>” appear in the chat log. E.g. “/me eats pizza.” leads to “\* Alfred eats pizza.” (if your name is “Alfred”)
+* `/msg <player> <message>`—Send a direct message `<message>` to `<player>`; but not to the other players. **Note**: The message is not really secret. Anyone intercepting the network traffic and the server operator could still, in principle, read it
+* `/me <action>`—Makes a text in the format “\* `<your name> <action>`” appear in the chat log. E.g. “/me eats pizza.” leads to “\* Alfred eats pizza.” (if your name is “Alfred”)
 
 See [Chat](https://wiki.luanti.org/Chat "Chat") for details
 
 #### Items
 
-* `/give <player> <itemstring> [<count> [<wear>]]`—Give the specified item (see [Itemstrings](https://wiki.luanti.org/Itemstrings "Itemstrings")) <count> times (default: 1) to the player. <wear> specifies the damage for tools (0-65535) and is meaningless for other items, higher means more damage (default: 0). Requires the “give” privilege
-* `/giveme <itemstring> [<count> [<wear>]]`—Give item to yourself. <count> and <wear> have the same meaning as for /give. Requires the “give” privilege.
+* `/give <player> <itemstring> [<count> [<wear>]]`—Give the specified item (see [Itemstrings](https://wiki.luanti.org/Itemstrings "Itemstrings")) `<count>` times (default: 1) to the player. `<wear>` specifies the damage for tools (0-65535) and is meaningless for other items, higher means more damage (default: 0). Requires the “give” privilege
+* `/giveme <itemstring> [<count> [<wear>]]`—Give item to yourself. `<count>` and `<wear>` have the same meaning as for /give. Requires the “give” privilege.
 * `/pulverize`—Destroys the wielded item. Can be used by any player
 * `/clearinv [<name>]`—Destroys all items in your inventory (no argument provided) or in someone else's inventory (`name` provided). To clear someone else's inventory, you need the “server” privilege
 
-**Hint**: Negative numbers for <count> and <wear> will count down from 65536, so you can use -1 as shorthand for 65535, the maximum possible value.
+**Hint**: Negative numbers for `<count>` and `<wear>` will count down from 65536, so you can use -1 as shorthand for 65535, the maximum possible value.
 
 ##### Examples
 
@@ -95,9 +95,9 @@ See [Chat](https://wiki.luanti.org/Chat "Chat") for details
 Teleportation is the immediate displacement of any player to a given position. All of the following commands require the “teleport” privilege:
 
 * `/teleport <x>,<y>,<z>`—Teleports yourself to given [coordinates](https://wiki.luanti.org/Coordinates "Coordinates")
-* `/teleport <target_player>`—Teleports yourself to the player with the name <target\_player>
-* `/teleport <player> <x>,<y>,<z>`—Teleports <player> to given coordinates. Also requires the “bring” privilege
-* `/teleport <player1> <player2>`—Teleports <player1> to <player2>. Also requires the “bring” privilege
+* `/teleport <target_player>`—Teleports yourself to the player with the name `<target\_player>`
+* `/teleport <player> <x>,<y>,<z>`—Teleports `<player>` to given coordinates. Also requires the “bring” privilege
+* `/teleport <player1> <player2>`—Teleports `<player1>` to `<player2>`. Also requires the “bring” privilege
 
 The coordinates support relative values with `~` (see above). You can set a position relative to your current position then.
 
@@ -113,20 +113,20 @@ The coordinates support relative values with `~` (see above). You can set a posi
 
 These commands allow to set and reset the passwords of any player and require the “password” privilege to work.
 
-* `/setpassword <player> <password>`—Sets password of <player> to <password>
-* `/clearpassword <player>`—Makes password of <player> empty
+* `/setpassword <player> <password>`—Sets password of `<player>` to `<password>`
+* `/clearpassword <player>`—Makes password of `<player>` empty
 
 #### Privilege manipulation
 
 All these commands require you to have the “privs” (to manipulate all privileges) or “basic\_privs” \[to manipulate the privileges set as basic\_privs in the minetest.conf ( default “interact” and “shout”) privileges\] privilege.
 
-* `/grant <player> <privilege>`—Gives the <privilege> to <player>
-* `/grant <player> all`—Give all available privileges to <player>
-* `/grantme <privilege>`—Give <privilege> to yourself
+* `/grant <player> <privilege>`—Gives the `<privilege>` to `<player>`
+* `/grant <player> all`—Give all available privileges to `<player>`
+* `/grantme <privilege>`—Give `<privilege>` to yourself
 * `/grantme all`—Gives all privilege to yourself
-* `/revoke <player> <privilege>`—Takes away a <privilege> from <player>
-* `/revoke <player> all`—Takes away as many privileges as possible from <player>
-* `/revokeme <privilege>`—Takes away a <privilege> from yourself
+* `/revoke <player> <privilege>`—Takes away a `<privilege>` from `<player>`
+* `/revoke <player> all`—Takes away as many privileges as possible from `<player>`
+* `/revokeme <privilege>`—Takes away a `<privilege>` from yourself
 * `/revokeme all`—Takes away as many privileges as possible from you
 
 `<privilege>` can also take a list of privileges, each separated by a comma. For example: `/grantme fly,noclip,fast` grants you the “fly”, “noclip” and “fast” privileges.
@@ -135,7 +135,7 @@ All these commands require you to have the “privs” (to manipulate all privil
 
 These commands allow the user to kick, ban and unban players. Kicking a player means to remove a connected player from the server. This requires the “kick” privilege. Banning a player prevents him/her to connect to the server again. The player does not need to be connected at this time. Unbanning means to remove a ban from a player, allowing him/her to connect to the server again. The ban and unban commands require the “ban” privilege.
 
-* `/kick <player name> [<reason>]` – Kicks the player with the name <player name>. Optionally a <reason> can be provided in text-form. This text is also shown to the kicked player.
+* `/kick <player name> [<reason>]` – Kicks the player with the name `<player name>`. Optionally a `<reason>` can be provided in text-form. This text is also shown to the kicked player.
 * `/ban` - show list of banned players
 * `/ban <player name>`—Ban IP of player
 * `/unban <player name>`—Remove ban of player with the specified name
@@ -156,7 +156,7 @@ Request some information from the server; the answer from the server will also b
 * `/time <hours>:<minutes>`—Sets the [time of day](https://wiki.luanti.org/Time_of_day "Time of day") in the 24-hour format (0:00-23:59). Requires the “settime” privilege. Precede the time with a tilde for a relative time change.
 * `/time <time_of_day>`—Sets the [time of day](https://wiki.luanti.org/Time_of_day "Time of day") as a number between 0 and 24000 (see [time of day](https://wiki.luanti.org/Time_of_day "Time of day")). Requires the “settime” privilege. Supports relative number syntax with `~` (see above).
 * `/set -n time_speed <speed>`—Sets the speed of [day/night cycle](https://wiki.luanti.org/Time_of_day "Time of day") where `<speed>` is the time speed (read as “`<speed>` times faster than in real life”). 72 is the default, which means a day-night cycle lasts 20 minutes by default. Requires the “server” privilege
-* `/spawnentity <entity> [<X>,<Y>,<Z>]`—Spawns an [entity](http://dev.minetest.net/LuaEntitySAO#Lua_Entity) of type <entity> (see [List of entity names](https://wiki.luanti.org/List_of_entity_names "List of entity names")) near your position or at the X,Y,Z coordinates, if specified. Requires “give” and “interact” privileges. The coordinates support relative values with `~` (see above)
+* `/spawnentity <entity> [<X>,<Y>,<Z>]`—Spawns an [entity](http://dev.minetest.net/LuaEntitySAO#Lua_Entity) of type `<entity>` (see [List of entity names](https://wiki.luanti.org/List_of_entity_names "List of entity names")) near your position or at the X,Y,Z coordinates, if specified. Requires “give” and “interact” privileges. The coordinates support relative values with `~` (see above)
 
 #### Server maintenance
 
@@ -164,9 +164,9 @@ All of these commands require the “server” privilege.
 
 * `/shutdown [-r]`—Shuts down the server. If `-r` is provided, players are given an offer to reconnect
 * `/shutdown <delay> [-r]`—Shuts down the server in `<delay>` seconds or aborts a pending shutdown if the number is -1. If `-r` is provided, players are given an offer to reconnect
-* `/set <variable>`—Shows the value of the given server <variable> (→[minetest.conf](https://wiki.luanti.org/Minetest.conf "Minetest.conf"))
-* `/set <variable> <new value>`—Sets the existing server <variable> to the given <new value>
-* `/set -n <variable> <initial value>`—Creates a new server variable named <variable> and sets it to <initial value>
+* `/set <variable>`—Shows the value of the given server `<variable>` (→[minetest.conf](https://wiki.luanti.org/Minetest.conf "Minetest.conf"))
+* `/set <variable> <new value>`—Sets the existing server `<variable>` to the given `<new value>`
+* `/set -n <variable> <initial value>`—Creates a new server variable named `<variable>` and sets it to `<initial value>`
 * `/clearobjects [full|quick]`—Clears objects/entities (removes dropped [items](https://wiki.luanti.org/Items "Items"), [mobs](https://wiki.luanti.org/Mobs "Mobs") and possibly more) on the server. In “quick” mode (default), objects in loaded mapblocks are removed immediately, while other objects are removed when the mapblock they're in is loaded. In “full” mode, all objects are cleared. Quick mode is very fast, but the full mode may slow down the server to a crawl for 10 to more than 60 seconds or even freeze it.
 * `/auth_reload`—Reloads _auth.txt_, which is the authentication data, containing privileges and Base64-scrambled passwords
 * `/emergeblocks here [<radius>]`—Starts loading (or generating, if inexistent) map blocks around the player's current position with an optional radius (in nodes)
@@ -184,9 +184,9 @@ Note: The coordinates in `/emergeblocks`, `/fixlight` and `/deleteblocks` suppor
 
 Allows to use [Rollback](https://wiki.luanti.org/index.php?title=Rollback&action=edit&redlink=1 "Rollback (page does not exist)"). Requires the “rollback” privilege.
 
-* `/rollback_check [<range>] [<seconds>]`—Checks who has last touched a node or near it, max. <seconds> ago (default <range>=0, default <seconds>=86400, which equals 24 hours in real time).
-* `/rollback <player name> [<seconds>]`—Reverts actions of a player; default for <seconds> is 60
-* `/rollback :<actor name> [<seconds>]`—Reverts actions of an actor _(not a player)_; default for <seconds> is 60
+* `/rollback_check [<range>] [<seconds>]`—Checks who has last touched a node or near it, max. `<seconds>` ago (default `<range>=0`, default `<seconds>=86400`, which equals 24 hours in real time).
+* `/rollback <player name> [<seconds>]`—Reverts actions of a player; default for `<seconds>` is 60
+* `/rollback :<actor name> [<seconds>]`—Reverts actions of an actor _(not a player)_; default for `<seconds>` is 60
 
 ### Profiler
 

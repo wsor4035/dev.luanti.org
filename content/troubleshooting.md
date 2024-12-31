@@ -109,7 +109,7 @@ Ensure that you installed the mod correctly (empty mod directory?), read again [
 
 If nothing helps, it might be a problem with the mod itself. Report the error to the mod author on the mod's forum page or, if available, the mod's GitHub page. Copy and paste the section in debug.txt that starts with "=====ERROR FROM LUA=====", or any relevant line about this problem.
 
-#### ”attempt to index field '<any value>' (a nil value)”
+#### ”attempt to index field `<any value>` (a nil value)”
 
 These error may look like one these:
 
