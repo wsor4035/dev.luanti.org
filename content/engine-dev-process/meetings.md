@@ -15,7 +15,7 @@ This Wiki page contains the meeting plans for upcoming meetings, and meeting not
 Upcoming Meetings
 -----------------
 
-2024-12-22
+2025-01-05
 ----------
 
 **Remember to post meetings in the [GitHub discussions](https://github.com/orgs/minetest/discussions) in advance**
@@ -24,12 +24,11 @@ Add your points here. Most important comes first.
 
 **Organization Discussion**
 
-* `<y5nw> celeron55: may I propose moving the discussion about me to the 2024-10-13 meeting? (mainly due to personal reasons)`
-   * (context: being a core dev) past date, but appears to not have been discussed yet?
+* foo
 
 **PR discussion/reviews**
 
-* https://github.com/minetest/minetest/pulls?q=is%3Apr+is%3Aopen+scancodes
+* bar
 
 Also consider:
 
@@ -37,6 +36,18 @@ Also consider:
 
 Past Meetings
 -------------
+
+2024-12-22
+----------
+
+**Organization Discussion**
+
+* `<y5nw> celeron55: may I propose moving the discussion about me to the 2024-10-13 meeting? (mainly due to personal reasons)`
+   * (context: being a core dev) past date, but appears to not have been discussed yet. Answer still uncertain
+
+**PR discussion/reviews**
+
+* https://github.com/minetest/minetest/pulls?q=is%3Apr+is%3Aopen+scancodes
 
 2024-12-08
 ----------
