@@ -26,7 +26,7 @@ Modern animation model support, added in release 5.10. Using this format means y
 ### Node Boxes Format
 
 {{< notice note >}}
-This Format is only supported for nodes
+This Format is only supported for nodes.
 {{< /notice >}}
 
 See https://api.luanti.org/nodes/#node-boxes.
