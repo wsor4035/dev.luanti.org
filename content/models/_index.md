@@ -9,7 +9,7 @@ Luanti supports a few different model formats.
 
 ### `.obj` Format
 
-Useful for static models, doesnt not support animation.
+Useful for static models, doesn't not support animation.
 
 ### `.b3d` Format
 
