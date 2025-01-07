@@ -5,16 +5,17 @@ aliases:
 ---
 
 # Server Metrics using Prometheus
+
 Prometheus is an "open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach".
 
-Luanti has built-in support for prometheus, allowing you to see metrics about your server - such as player count and performance information.
+Luanti has built-in support for Prometheus, allowing you to see metrics about your server - such as player count and performance information.
 
 Here are some examples of Grafana dashboards created using Prometheus:
 
-\- [monitor.rubenwardy.com](https://monitor.rubenwardy.com/d/9TgIegyGk/ctf) - [monitoring.minetest.land](https://monitoring.minetest.land/) (note: this contains heavy mondifications)
+- [monitor.rubenwardy.com](https://monitor.rubenwardy.com/d/9TgIegyGk/ctf)
+- https://monitoring.luanti.ch/ (note: this contains heavy modifications)
 
-Using Prometheus in Luanti
---------------------------
+## Using Prometheus in Luanti
 
 ### Get or build the prometheus-cpp library
 
