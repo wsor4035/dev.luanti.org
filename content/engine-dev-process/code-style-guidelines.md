@@ -107,7 +107,6 @@ if (foobar < 3) foobar = 45;      // Bad
 (foobar < 3 && (foobar = 45));    // Bad
 ```
 
-
 Violating this rule will result in **instant rejection**.
 
 Examples of good if statement wordings:
@@ -120,8 +119,15 @@ if (foobar < 6) {
 	foobar = 62;
 	return;
 }
+
+if (foobar == 42) {
+	bar();
+} else {
+	baz();
+}
 ```
 
+Note that `else` is on the same line as the closing brace of the previous `if`.
 
 #### Nested for loop exception
 
