@@ -15,7 +15,7 @@ This Wiki page contains the meeting plans for upcoming meetings, and meeting not
 Upcoming Meetings
 -----------------
 
-2025-01-05
+2025-01-19
 ----------
 
 **Remember to post meetings in the [GitHub discussions](https://github.com/orgs/minetest/discussions) in advance**
@@ -24,7 +24,8 @@ Add your points here. Most important comes first.
 
 **Organization Discussion**
 
-* foo
+* Feature freeze time (Zughy)
+* PLEASE finish the [renaming process](https://github.com/minetest/minetest/issues/15322) before FOSDEM (Zughy)
 
 **PR discussion/reviews**
 
