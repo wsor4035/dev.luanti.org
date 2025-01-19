@@ -71,7 +71,17 @@ _Note to coredevs_: Creating a new language directly from weblate is sufficient,
 
 Translations should be merged in bulk, and not too often, to not create too large "noise" in the commit log. A good schedule is once every few months and at the start of the **feature freeze**. This section explains the necessary steps for coredevs. You will need owner access to the hosted repo in order to be able to push the "Rebase" button.
 
-As of Oct 2019, ShadowNinja, nerzhul, sfan5, rubenwardy, Krock and possibly some other coredevs have such access.
+As of January 2025, the list contains the following people:
+* celeron55
+* grorp
+* Krock
+* nerzhul
+* rubenwardy
+* sfan5
+* shadowninja
+* Warr1024
+
+For an up to date list consult someone with access to look at the people page in Weblate.
 
 ##### Setting up
 
