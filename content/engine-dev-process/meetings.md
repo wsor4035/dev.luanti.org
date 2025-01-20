@@ -15,7 +15,7 @@ This Wiki page contains the meeting plans for upcoming meetings, and meeting not
 Upcoming Meetings
 -----------------
 
-2025-01-19
+2025-02-02
 ----------
 
 **Remember to post meetings in the [GitHub discussions](https://github.com/orgs/minetest/discussions) in advance**
@@ -24,8 +24,7 @@ Add your points here. Most important comes first.
 
 **Organization Discussion**
 
-* Feature freeze time (Zughy)
-* PLEASE finish the [renaming process](https://github.com/minetest/minetest/issues/15322) before FOSDEM (Zughy)
+* foo
 
 **PR discussion/reviews**
 
@@ -37,6 +36,16 @@ Also consider:
 
 Past Meetings
 -------------
+
+2025-01-19
+----------
+
+**Organization Discussion**
+
+* Feature freeze time (Zughy)
+    * Feature freeze has started. Still undecided about what to do with SDL2
+* PLEASE finish the [renaming process](https://github.com/minetest/minetest/issues/15322) before FOSDEM (Zughy)
+    * Luanti organisation has been created on GitHub, the rest is in the works. For more details see the [IRC log](https://irc.minetest.net/minetest-dev/2025-01-19#i_6236220)
 
 2024-12-22
 ----------
