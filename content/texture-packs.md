@@ -1,6 +1,6 @@
 ---
 title: Items
-alias:
+aliases:
 - /Texture_Packs
 ---
 

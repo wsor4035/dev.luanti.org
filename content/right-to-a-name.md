@@ -1,6 +1,6 @@
 ---
 title: Right to a Name
-alias:
+aliases:
 - /Right_to_a_Name
 ---
 
