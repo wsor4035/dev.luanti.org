@@ -1,7 +1,8 @@
 ---
 title: Items
-alias:
+aliases:
 - /Items
+- /Unknown_Item
 ---
 
 # Items
