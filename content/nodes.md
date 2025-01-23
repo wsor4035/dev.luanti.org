@@ -1,7 +1,10 @@
 ---
 title: Nodes
-alias:
+aliases:
 - /Nodes
+- /Air
+- /Ignore
+- /Unknown_Node
 ---
 
 # Nodes
