@@ -1,8 +1,9 @@
 ---
-title: All rules regarding development
+title: Engine development process
 aliases:
 - /All_rules_regarding_to_development
 - /all-rules-regarding-development
+bookCollapseSection: true
 ---
 
 # All rules regarding development
