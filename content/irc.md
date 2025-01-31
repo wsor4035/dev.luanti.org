@@ -10,7 +10,7 @@ aliases:
 
 All the engaged people from the community and the developer team can be found there, and most prolific modders will also be available there.
 
-Some of the IRC channels are also bridged and accessible from the [Luanti Discord server](https://discord.gg/minetest), with message history kept. For IRC users who do not have a bouncer, most IRC channels have logs which are made available on [irc.minetest.net](https://irc.minetest.net/).
+Some of the IRC channels are also bridged and accessible from the [Luanti Discord server](https://discord.gg/minetest), with message history kept. For IRC users who do not have a bouncer, most IRC channels have logs which are made available on [irc.luanti.org](https://irc.luanti.org/).
 
 ## Channels
 
@@ -18,15 +18,15 @@ All of the Luanti channels are on irc.libera.chat. You can connect either via we
 
 ### General channels
 
-| Channel                                                                                                    | Topic                                                                                                                       | Bridged via Discord | Logs                                        |
-| ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------- |
-| [#minetest](irc://irc.libera.chat/#minetest) ([webchat](https://web.libera.chat/#minetest))                | Casual discussion about everything Luanti. Bridged to the Discord server as #minetest-irc                                   | Yes                 | [1](https://irc.minetest.net/minetest/)     |
-| [#minetest-dev](irc://irc.libera.chat/#minetest-dev) ([webchat](https://web.libera.chat/#minetest-dev))    | Core Luanti engine development discussion. Everything else (including modding) is off-topic. **Please stay on topic here!** | Yes                 | [2](https://irc.minetest.net/minetest-dev)  |
-| [#minetest-hub](irc://irc.libera.chat/#minetest-hub) ([webchat](https://web.libera.chat/#minetest-hub))    | Another general IRC channel which is mostly unused nowadays.                                                                | Yes                 | [3](https://irc.minetest.net/minetest-hub)  |
-| [#minetest-docs](irc://irc.libera.chat/#minetest-docs) ([webchat](https://web.libera.chat/#minetest-docs)) | IRC channel for the Minetest Docs project.                                                                                  | Yes                 | [4](https://irc.minetest.net/minetest-docs) |
-| [#minetest-fr](irc://irc.libera.chat/#minetest-fr) ([webchat](https://web.libera.chat/#minetest-fr))       | General discussion in French                                                                                                | No                  | (No logs known)                             |
-| [#minetest-de](irc://irc.libera.chat/#minetest-de) ([webchat](https://web.libera.chat/#minetest-de))       | General discussion in German                                                                                                | No                  | (No logs known)                             |
-| [#minetest-es](irc://irc.libera.chat/#minetest-es) ([webchat](https://web.libera.chat/#minetest-es))       | General discussion in Spanish                                                                                               | No                  | (No logs known)                             |
+| Channel                                                                                                    | Topic                                                                     | Discord Bridged | Logs                                      |
+| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | --------------- | ----------------------------------------- |
+| [#luanti](irc://irc.libera.chat/#minetest) ([webchat](https://web.libera.chat/#luanti))                    | Casual discussion about everything Luanti.                                | Yes             | [1](https://irc.luanti.org/luanti)        |
+| [#luanti-dev](irc://irc.libera.chat/#luanti-dev) ([webchat](https://web.libera.chat/#luanti-dev))          | Core Luanti engine development discussion. **Please stay on topic here!** | Yes             | [2](https://irc.luanti.org/luanti-dev)    |
+| [#minetest-hub](irc://irc.libera.chat/#minetest-hub) ([webchat](https://web.libera.chat/#minetest-hub))    | Another general IRC channel which is mostly unused nowadays.              | Yes             | [3](https://irc.luanti.org/minetest-hub)  |
+| [#minetest-docs](irc://irc.libera.chat/#minetest-docs) ([webchat](https://web.libera.chat/#minetest-docs)) | IRC channel for the Minetest Docs project.                                | Yes             | [4](https://irc.luanti.org/minetest-docs) |
+| [#minetest-fr](irc://irc.libera.chat/#minetest-fr) ([webchat](https://web.libera.chat/#minetest-fr))       | General discussion in French                                              | No              | (No logs known)                           |
+| [#minetest-de](irc://irc.libera.chat/#minetest-de) ([webchat](https://web.libera.chat/#minetest-de))       | General discussion in German                                              | No              | (No logs known)                           |
+| [#minetest-es](irc://irc.libera.chat/#minetest-es) ([webchat](https://web.libera.chat/#minetest-es))       | General discussion in Spanish                                             | No              | (No logs known)                           |
 
 ### Games and mods
 
