@@ -6,35 +6,36 @@ aliases:
 
 # Player
 
-The **player** or **“player character”** is the character that a user controls. The official name given for the player's appearance is “Sam”, which is a recursive acronym for “Sam ain’t Minecraft”.
+The **player** or **“player character”** is the character that a user controls.
 
-{{< notice info >}}As with all aspects of the game, the player behavior can be heavily customized by mods. Below are some common practices, but these do not apply to all games.{{< /notice >}}
-
-Health
-------
+## Health
 
 Players start with 10 [hearts](/hearts) which are equal to 20 hit points (HP). The smallest unit of health is 0.5 hearts or 1 hit point. Players die when they have lost all hearts.
 
 Players can restore health by consuming food. Players can lose health by various means, including, but not limited to: Falling too hard, touching a harmful block such as lava, drowning in a [liquid](/liquid) or getting attacked by other players (if PvP is enabled).
 
-Breath
-------
+The built-in health system can be completely disabled by the game or mods, or by the player through the per-world `enable_damage` setting if made accessible by the game.
+
+## Breath
 
 Players have up to 10 breath points, represented by bubbles. Players start at 10 breath points and normally the breath quickly increases up to 10 in steps of 1 breath point. If players have full breath, the breath meter in the HUD is usually hidden. While the player is inside a [liquid](/liquid) with drowning damage, breath will be reduced by 1 every 2 seconds. If the breath reaches 0, the player will take damage every 2 seconds as long the player is inside the liquid. The damage taken depends on the liquid type.
 
-Death
------
+The built-in breath system can be completely disabled by the game or mods as part of the health system, or by the player through the per-world `enable_damage` setting if made accessible by the game.
 
-When players lose their health, they die. After death, the player can immediately respawn, with health and breath restored. The new spawn position is usually somewhere near the initial spawning position. Other consequences of death (usually negative) heavily depend on the game and [mods](/mods) being used.
+## Death
 
-When a player dies in [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/), the player loses all items in the inventory. Bones which contain the contents of the player inventory are left behind at the place of death.
+When players lose their health, they die. After death, the player can immediately respawn, with health and breath restored. The new spawn position is usually somewhere near the initial spawning position (see [Spawn Algorithm](/spawn-algorithm/)). Other consequences of death (usually negative) can be implemented by mods.
 
-Name
-----
+Default engine behaviour is that the player keeps the items that are in their inventory after death, but this behaviour can be changed by games and mods.
 
-As of version 5.1.0, player names may consist only of the characters a-z, A-Z, 0-9, the dash (“-”) and the underscore (“\_”). Other characters are not allowed.
+## Name
 
-Appearance
-----------
+Player names may consist only of the characters a-z, A-Z, 0-9, the dash (“-”) and the underscore (“\_”). Other characters are not allowed.
 
-Players appear as 3D models similar to Minecraft. However, they never hold any [blocks](/nodes) or [items](/items) in [hand](/hand) and never look up or down. As of version 0.4.10, there is a third person view to see oneself. Press F7 to switch between camera modes. The pitch (vertical viewing angle) of a player is not visible to other players by default. The pitch of a player is between -89.5 and 89.5 degrees.  
+## Appearance
+
+The default appearance of the player character in the engine is as a flat 2D sprite with a front and back texture. The "Change Camera" keybind can be used by the player to switch into third-person mode to see their character in the world from the back and from the front. It is possible for games to replace the sprite textures, or replace the character completely with a custom animated 3D model.
+
+## Trivia
+
+- The default player skin in `player_api` commonly used in Minetest Game and other games, is named "Sam". It is a recursive acronym for "Sam ain’t Minecraft".
