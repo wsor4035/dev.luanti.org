@@ -2,6 +2,7 @@
 title: Debug
 aliases:
 - /Debug
+- /debug
 ---
 
 # Debug

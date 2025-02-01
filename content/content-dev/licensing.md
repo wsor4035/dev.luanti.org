@@ -2,6 +2,7 @@
 title: Licensing
 aliases:
 - /Licensing
+- /licensing
 ---
 
 # Licensing

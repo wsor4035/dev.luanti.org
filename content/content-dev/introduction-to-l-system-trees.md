@@ -2,6 +2,7 @@
 title: Introduction to L-system trees
 aliases:
 - /Introduction_to_L-system-trees
+- /introduction-to-l-system-trees
 ---
 
 # Introduction to L-system trees

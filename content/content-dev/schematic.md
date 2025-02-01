@@ -2,6 +2,7 @@
 title: Schematic
 aliases:
 - /Schematic
+- /schematic
 ---
 
 # Schematic

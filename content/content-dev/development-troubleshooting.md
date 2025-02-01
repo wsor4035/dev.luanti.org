@@ -2,6 +2,7 @@
 title: Development troubleshooting
 aliases:
 - /Development_troubleshooting
+- /development-troubleshooting
 ---
 
 # Development troubleshooting

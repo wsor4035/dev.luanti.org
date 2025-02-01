@@ -2,6 +2,7 @@
 title: Creating Texture Packs
 aliases:
 - /Creating_texture_packs
+- /creating-texture-packs
 ---
 
 # Creating texture packs

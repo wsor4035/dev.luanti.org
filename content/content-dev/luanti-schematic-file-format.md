@@ -2,6 +2,7 @@
 title: Luanti Schematic File Format
 aliases:
 - /Minetest_Schematic_File_Format
+- /luanti-schematic-file-format
 ---
 
 # Luanti Schematic File Format

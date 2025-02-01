@@ -1,5 +1,7 @@
 ---
 title: Game Theme Reimplementation
+aliases:
+- /game-theme-reimplementation
 ---
 
 # Game Theme Reimplementation
