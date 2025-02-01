@@ -1,7 +1,5 @@
 ---
 title: Improving Build Times
-aliases:
-- /Improving_build_times
 ---
 
 # Improving build times
