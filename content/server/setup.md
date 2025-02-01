@@ -3,6 +3,7 @@ title: Setting up a server
 aliases:
 - /Setting_up_a_server
 - /Setting_up_a_server/Debian
+- /setting-up-a-server
 ---
 
 # Setting up a server
@@ -181,7 +182,7 @@ Make your server listed in the server list and by setting the following settings
 - `server_description` - set the value of this to a longer description describing your server.
 - `server_address` - if you have a domain name for your server, then set this to the domain name.
 	- Should *only* be the domain name (e.g. `coolserver.luanti.org`, not `https://coolserver.luanti.org/woah/`). If you do not have a domain name pointed to your server then do not add this setting or write anything for it, or the server list will reject your server.
-- `server_url` - if you have a website for your server, then set this to the website URL, it must being with `http://` or `https://`.
+- `server_url` - if you have a website for your server, then set this to the website URL, it must begin with `http://` or `https://`.
 - `motd` - a message that is sent to the player when they join. Use this to welcome them.
 - `serverlist_url` - do *not* set this unless you are announcing to a custom list.
 - `bind_address` - do *not* set this unless you have a setup with multiple IP addresses on the same server.
