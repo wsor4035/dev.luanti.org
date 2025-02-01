@@ -1,7 +1,5 @@
 ---
 title: Lua Environment
-aliases:
-- /Lua_Environment
 ---
 
 # Lua Environment

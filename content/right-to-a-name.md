@@ -1,7 +1,5 @@
 ---
 title: Right to a Name
-aliases:
-- /Right_to_a_Name
 ---
 
 # Right to a Name

@@ -1,7 +1,5 @@
 ---
 title: NodeMetaData
-aliases:
-- /NodeMetaData
 ---
 
 # NodeMetaData

@@ -2,7 +2,6 @@
 title: Remote media
 aliases:
 - /Remote_media
-- /remote-media
 ---
 
 # Remote media

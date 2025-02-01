@@ -1,7 +1,5 @@
 ---
 title: Distributing Luanti Games
-aliases:
-- /Distributing_Minetest_Games
 ---
 
 # Distributing Luanti Games

@@ -1,7 +1,5 @@
 ---
 title: VoxelArea
-aliases:
-- /VoxelArea
 ---
 
 # VoxelArea

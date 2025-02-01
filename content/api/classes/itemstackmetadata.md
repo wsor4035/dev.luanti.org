@@ -1,7 +1,5 @@
 ---
 title: ItemStackMetaData
-aliases:
-- /ItemStackMetaData
 ---
 
 # ItemStackMetaData

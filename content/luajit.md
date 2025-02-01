@@ -1,7 +1,5 @@
 ---
 title: LuaJIT
-aliases:
-- /LuaJIT
 ---
 
 # LuaJIT

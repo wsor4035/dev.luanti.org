@@ -1,7 +1,5 @@
 ---
 title: ModStorage
-aliases:
-- /ModStorage
 ---
 
 # ModStorage

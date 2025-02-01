@@ -1,7 +1,5 @@
 ---
 title: Raycast
-aliases:
-- /Raycast
 ---
 
 # Raycast

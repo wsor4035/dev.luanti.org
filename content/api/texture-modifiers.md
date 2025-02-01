@@ -1,7 +1,5 @@
 ---
 title: Texture Modifiers
-aliases:
-- /Texture_Modifiers
 ---
 
 # Texture Modifiers

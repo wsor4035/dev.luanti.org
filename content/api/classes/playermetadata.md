@@ -1,7 +1,5 @@
 ---
 title: PlayerMetaData
-aliases:
-- /PlayerMetaData
 ---
 
 # PlayerMetaData

@@ -1,7 +1,5 @@
 ---
 title: Limitations
-aliases:
-- /Limitations
 ---
 
 # Limitations

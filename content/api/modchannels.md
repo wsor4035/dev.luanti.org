@@ -1,7 +1,5 @@
 ---
 title: Modchannels
-aliases:
-- /Modchannels
 ---
 
 # Modchannels

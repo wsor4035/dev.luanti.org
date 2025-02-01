@@ -1,7 +1,5 @@
 ---
 title: Object Properties
-aliases:
-- /Object_Properties
 ---
 
 # Object Properties

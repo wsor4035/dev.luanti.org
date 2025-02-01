@@ -1,7 +1,5 @@
 ---
 title: MetaData
-aliases:
-- /MetaData
 ---
 
 # MetaData

@@ -1,7 +1,5 @@
 ---
 title: Persistence
-aliases:
-- /Persistence
 ---
 
 # Persistence

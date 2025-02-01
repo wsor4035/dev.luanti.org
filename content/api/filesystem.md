@@ -1,7 +1,5 @@
 ---
 title: Filesystem
-aliases:
-- /Filesystem
 ---
 
 # Filesystem

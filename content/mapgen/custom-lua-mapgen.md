@@ -1,7 +1,5 @@
 ---
 title: Custom Lua Mapgen
-aliases:
-- /custom-lua-mapgen
 ---
 
 # Custom Lua Mapgen

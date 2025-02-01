@@ -1,7 +1,5 @@
 ---
 title: Random
-aliases:
-- /Random
 ---
 
 # Random

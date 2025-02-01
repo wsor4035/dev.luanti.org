@@ -1,7 +1,5 @@
 ---
 title: Keeping world compatibility
-aliases:
-- /Keeping_world_compatibility
 ---
 
 # Keeping world compatibility

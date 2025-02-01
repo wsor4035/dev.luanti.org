@@ -1,7 +1,5 @@
 ---
 title: Using Blockbench
-aliases:
-- /using-blockbench
 ---
 
 # Using Blockbench

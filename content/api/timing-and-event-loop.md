@@ -1,7 +1,5 @@
 ---
 title: Timing and Event loop
-aliases:
-- /Timing_and_Event_loop
 ---
 
 # Timing and Event loop
