@@ -11,7 +11,7 @@ A **world** contains an environment and/or building(s) you can play in. A world 
 Finding worlds
 --------------
 
-See [Maps](https://forum.minetest.net/viewforum.php?f=12) in the [forums](http://forum.minetest.net/) to find downloads to worlds that others have made.
+See the [Maps forum](https://forum.luanti.org/viewforum.php?f=12) on the Luanti forums to find downloads to worlds that others have made.
 
 Installation
 ------------
@@ -20,24 +20,24 @@ Installation
 
 For world creators, `.7z` is the recommended archive format as it is a free format (as compared to `.rar`) that typically allows for the best compression.
 
-Put the extracted files in the “`worlds`” folder of your Luanti installation folder. To find the folder, select the "About" tab in the main menu and press "Open User Data Directory".
+Put the extracted files in the `worlds` folder of your Luanti installation folder. To find the folder, select the "About" tab in the main menu and press "Open User Data Directory".
 
-The files such as `env_meta.txt` **must** be in the root of the world’s folder (eg. “`worlds/my_world/env_meta.txt`”).
+The files such as `env_meta.txt` **must** be in the root of the world’s folder (eg. `worlds/my_world/env_meta.txt`).
 
 World directory content
 -----------------------
 
-See [world\_format.md](https://github.com/luanti-org/luanti/blob/master/doc/world_format.md) in the Luanti source tree.
+See [world_format.md](https://github.com/luanti-org/luanti/blob/master/doc/world_format.md) in the Luanti source tree.
 
 Schem file Creation / Import
 ----------------------------
 
-A **schem file (`.mts`)** is used to import building(s) into a world with the [WorldEdit mod](https://content.minetest.net/packages/sfan5/worldedit/). This file can be found in “`worlds/<my_world>/schems`” folder.
+A **schem file (`.mts`)** is used to import building(s) into a world with the [WorldEdit mod](https://content.luanti.org/packages/sfan5/worldedit/). This file can be found in “`worlds/<my_world>/schems`” folder.
 
 * To **create a schem file** :
 
 1. Type in your world name (with WorldEdit activated).
-2. Grant yourself all [privileges](https://wiki.luanti.org/Privileges "Privileges"): `/grantme all`
+2. Grant yourself all [privileges](/privileges/): `/grantme all`
 3. Press F5 to show the coordinates.
 4. Select the area to export by commands with `//pos1` and `//pos2` (these positions corresponds to an invisible diagonal of a cuboid selection).
 5. Create your schem file with `//mtschemcreate <name of your schem file>`. The file will be created into your “`worlds/<my_world>/schems`” folder.
