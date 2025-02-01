@@ -1,5 +1,5 @@
 ---
-title: Items
+title: Texture Packs
 aliases:
 - /Texture_Packs
 ---
