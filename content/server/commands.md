@@ -2,6 +2,7 @@
 title: Server Commands
 aliases:
 - /Server_commands
+- /server-commands
 ---
 
 # Server commands

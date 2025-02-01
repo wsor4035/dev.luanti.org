@@ -2,6 +2,7 @@
 title: How to get a domain name for your server
 aliases:
 - /How_to_get_a_domain_name_for_your_server
+- /how-to-get-a-domain-name-for-your-server
 ---
 
 # How to get a domain name for your server
