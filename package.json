@@ -1,5 +1,6 @@
 {
     "scripts": {
+        "prepare": "git submodule init && git submodule update",
         "build": "hugo",
         "build:ci": "hugo --panicOnWarning",
         "format:fix": "sort-package-json",
