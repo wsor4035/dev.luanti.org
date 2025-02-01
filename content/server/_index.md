@@ -1,5 +1,6 @@
 ---
 title: Server
+bookCollapseSection: true
 aliases:
 - /Server
 ---
