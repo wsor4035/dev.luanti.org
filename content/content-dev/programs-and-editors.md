@@ -2,6 +2,7 @@
 title: Programs and Editors
 aliases:
 - /Programs_and_Editors
+- /programs-and-editors
 ---
 
 # Programs and Editors

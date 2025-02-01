@@ -1,5 +1,6 @@
 ---
 title: Compiling Luanti
+bookCollapseSection: true
 ---
 
 # Compiling Luanti

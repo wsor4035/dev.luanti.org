@@ -1,5 +1,7 @@
 ---
 title: Lua Conventions
+aliases:
+- /lua-conventions
 ---
 
 # Lua Conventions

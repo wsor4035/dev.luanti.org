@@ -2,6 +2,7 @@
 title: Modding Tips
 aliases:
 - /Modding_Tips
+- /modding-tips
 ---
 
 # Modding Tips

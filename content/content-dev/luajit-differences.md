@@ -2,6 +2,7 @@
 title: LuaJIT differences
 aliases:
 - /LuaJIT_differences
+- /luajit-differences
 ---
 
 # LuaJIT differences

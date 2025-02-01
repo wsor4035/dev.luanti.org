@@ -2,6 +2,7 @@
 title: Lua Optimization Tips
 aliases:
 - /Lua_Optimization_Tips
+- /lua-optimization-tips
 ---
 
 # Lua Optimization Tips

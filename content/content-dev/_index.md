@@ -1,7 +1,9 @@
 ---
-title: Modding Intro
+title: Content Development
 aliases:
 - /Modding_Intro
+- /modding-intro
+bookCollapseSection: true
 ---
 
 # Modding Intro

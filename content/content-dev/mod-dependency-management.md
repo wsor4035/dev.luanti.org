@@ -1,5 +1,7 @@
 ---
 title: Mod Dependency Management
+aliases:
+- /mod-dependency-management
 ---
 
 # Mod Dependency Management

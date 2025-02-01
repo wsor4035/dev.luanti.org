@@ -2,6 +2,7 @@
 title: Mod interoperability
 aliases:
 - /Mod_interoperability
+- /mod-interoperability
 ---
 
 # Mod interoperability
