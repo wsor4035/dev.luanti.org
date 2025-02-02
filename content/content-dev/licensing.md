@@ -8,7 +8,7 @@ aliases:
 # Licensing
 
 
-Recently a considerable number of Luanti-based games have been appearing in the Android playstore, and Google Play. See the [list of Luanti forks](https://wiki.luanti.org/Overview_of_Luanti_forks "Overview of Luanti forks") for examples of these.
+Recently a considerable number of Luanti-based games have been appearing in the Android playstore, and Google Play. See the [list of Luanti forks](/overview-of-luanti-forks "Overview of Luanti forks") for examples of these.
 
 _Please look at: [FlightGear](http://www.flightgear.org/flightprosim.html) as they have the same issue as Luanti has._
 

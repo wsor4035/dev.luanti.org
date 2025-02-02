@@ -11,7 +11,7 @@ This page contains a list of tools that are useful for developing games and mods
 In addition to this list, you can also see the [Development Tools](https://content.luanti.org/packages/?tag=developer_tools) tag on ContentDB for mods useful for development and the [modtools](https://github.com/luanti-org/modtools) repository for officially maintained modding tools.
 
 ## Engine development
-- [Development Test](https://wiki.luanti.org/Games/Development_Test): A testing game for testing various engine features
+- Development Test: A testing game for testing various engine features
 - [/minetest/util](https://github.com/luanti-org/luanti/tree/master/util): Various maintenance utilities
 
 ## General Lua Tools
@@ -42,7 +42,7 @@ In addition to this list, you can also see the [Development Tools](https://conte
 - [Perlin noise tuner](https://codepen.io/treer/pen/gOPZyov?editors=0010): Visualizes 2D Perlin noise that Luanti will generate with different noiseparams.(Emulation of Luanti Perlin noise can be wrong in extremes/edge-cases due to precision of JavaScript number type)
 
 ## 3D models
-- [Blender](https://www.blender.org/): Essential for making animated models in Luanti, see [Using Blender](https://wiki.luanti.org/Using_Blender).
+- [Blender](https://www.blender.org/): Essential for making animated models in Luanti, see [Using Blender](/models/using-blender/).
 - [Blockbench](https://www.blockbench.net/): Useful for making static voxel models for Luanti, see [Using Blockbench](/using-blockbench/).
 
 ## Formspecs

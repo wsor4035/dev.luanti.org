@@ -37,7 +37,7 @@ The terrain was no longer flat and the pyramids are gone. The terrain generation
 *First water generation*  
 [![](/images/mapgen/First_water_mapgen.png)](/images/mapgen/First_water_mapgen.png)
 
-[Water](https://wiki.luanti.org/Water "Water") has been added and forms oceans at a fixed sea level.
+Water has been added and forms oceans at a fixed sea level.
 
 #### minetest-c55-101101170627 (and later)
 
@@ -50,7 +50,7 @@ The terrain was no longer flat and the pyramids are gone. The terrain generation
 *Even more trees*  
 [![](/images/mapgen/Grumbuduts_ymparisto.png)](/images/mapgen/Grumbuduts_ymparisto.png)
 
-[Trees](https://wiki.luanti.org/Tree "Tree") with [leaves](https://wiki.luanti.org/Leaves "Leaves") were added in, but they were very basic. Bushes (a single leaves block on the ground) were added as well. These primitive bushes have been removed in a later version.
+Trees with leaves were added in, but they were very basic. Bushes (a single leaves block on the ground) were added as well. These primitive bushes have been removed in a later version.
 
 ### Version 1
 
@@ -59,12 +59,12 @@ The terrain was no longer flat and the pyramids are gone. The terrain generation
 
 The first official mapgen was introduced in Minetest-c55 0.0.1. Features:
 
-*   Simple, **random** terrain with [stone](https://wiki.luanti.org/Stone "Stone") and [dirt with grass](https://wiki.luanti.org/Dirt_with_Grass "Dirt with Grass")
-*   [Dirt](https://wiki.luanti.org/Dirt "Dirt") generates below water and at some beaches
-*   Trees (consisting of [Tree](https://wiki.luanti.org/Tree "Tree") and [Leaves](https://wiki.luanti.org/Leaves "Leaves"))
+*   Simple, **random** terrain with stone and dirt with grass
+*   Dirt generates below water and at some beaches
+*   Trees (consisting of Tree and Leaves)
 *   Simple lakes and oceans at a fixed sea level
 *   Simple caves and ravines (vertical caves)
-*   First [ores](https://wiki.luanti.org/Ores "Ores"): [Mese blocks](https://wiki.luanti.org/Mese_Block "Mese Block") and [coal ores](https://wiki.luanti.org/Coal_Ore "Coal Ore") are generated underground
+*   First ores: Mese blocks and coal ores are generated underground
 
 ### Version 2 dev3
 
@@ -85,7 +85,7 @@ Things were tuned a little better.
 *Mapgen 2*  
 [![](/images/mapgen/Scenery2.jpeg)](/images/mapgen/Scenery2.jpeg)
 
-[Sand](https://wiki.luanti.org/Sand "Sand") has been added and formed sand beaches. A simple mud flow algorithm smoothens out dirt / dirt with grass hills. The cave generation has seen notable improvements and [iron ore](https://wiki.luanti.org/Iron_Ore "Iron Ore") has been added as well.
+Sand has been added and formed sand beaches. A simple mud flow algorithm smoothens out dirt / dirt with grass hills. The cave generation has seen notable improvements and iron ore has been added as well.
 
 ### Version 3 "3d noise"
 
@@ -108,7 +108,7 @@ More tweaking.
 
 Official map generation for version 0.3.1. It still uses 3D Perlin noise like the previous versions and is iconic for its extreme and often “blobby” terrain. In the 0.3 versions, this map generator hat predefined biomes like the current v6 map generator. In Minetest-c55 0.4, it was removed, but has been revived later (see [v5](#v5)).
 
-This version of the map generator is also used in [Voxelands](https://wiki.luanti.org/Overview_of_Minetest_forks#Voxelands "Overview of Minetest forks"), a fork of Minetest-c55.
+This version of the map generator is also used in Voxelands, a fork of Minetest-c55.
 
 ### Version 6
 
@@ -146,13 +146,13 @@ The mapgen “v6” (also known as “mgv6”) is the direct continuation of [ve
 *singlenode mapgen in Minetest 0.4.13*  
 [![](/images/mapgen/Mapgen_singlenode.jpg)](/images/mapgen/Mapgen_singlenode.jpg)
 
-This mapgen was introduced in Minetest 0.4.6 by [celeron55](https://wiki.luanti.org/Celeron55 "Celeron55"). It creates a world with only [Air](/nodes/#air) (can be changed with configuration) and is intended to be used by games and mods for making custom map generators, so they can start completely from scratch. The name “singlenode” means that it generates a _single_ type of _node_ everywhere, [Air](/nodes/#air) by default.
+This mapgen was introduced in Minetest 0.4.6 by [celeron55](/celeron55 "Celeron55"). It creates a world with only Air (can be changed with configuration) and is intended to be used by games and mods for making custom map generators, so they can start completely from scratch. The name “singlenode” means that it generates a _single_ type of _node_ everywhere, [Air](/nodes/#air) by default.
 
 This map generator has been hidden from the map generator selection screen for a couple of versions up to 0.4.16, in which it has been re-enabled again.
 
 ### indev
 
-This mapgen was introduced in Minetest 0.4.6 by proller and contained many experimental features. It is based on v6. Major new features included floating islands at Y=500 and above, rare huge caves, and a more extreme terrain near the [world boundaries](https://wiki.luanti.org/World_boundaries "World boundaries") in form of larger biomes, higher mountains and deeper oceans. It has been removed in version 0.4.10 because it was considered to be of low quality.
+This mapgen was introduced in Minetest 0.4.6 by proller and contained many experimental features. It is based on v6. Major new features included floating islands at Y=500 and above, rare huge caves, and a more extreme terrain near the world boundaries in form of larger biomes, higher mountains and deeper oceans. It has been removed in version 0.4.10 because it was considered to be of low quality.
 
 *   *Most of the surface in the indev mapgen is almost indentical to v6 (Minetest 0.4.9)*  
     [![](/images/mapgen/Mapgen_indev_spawn.jpg)](/images/mapgen/Mapgen_indev_spawn.jpg)
@@ -201,7 +201,7 @@ The mapgen “math” was introduced in Minetest 0.4.8 by proller. This was real
 
 This map generator has been removed in Minetest 0.4.10 when proller left the project because it was considered to be of very low quality and had many obvious lighting problems (see [forum topic](https://forum.luanti.org/viewtopic.php?f=3&t=7256#p148920)).
 
-The math mapgen is being continued in [Freeminer](https://wiki.luanti.org/Overview_of_Minetest_forks#Freeminer "Overview of Minetest forks"), a fork of Minetest.
+The math mapgen is being continued in Freeminer, a fork of Minetest.
 
 ### v5
 
@@ -235,7 +235,7 @@ Technically, Minetest was able to generate flat maps since 0.4.5 by using a mapg
 
 Introduced in Minetest 0.4.14 by Duane Robertson. It is notable for its “valley”-like shapes and its flowing rivers. These rivers are very different than in v7: They flow downhill rather than being flat at ocean level.
 
-In Minetest Game, these rivers are made out of [River Water](https://wiki.luanti.org/River_Water "River Water"), a liquid which has been introduced in the same version for the rivers. It has been introduced because a liquid with a reduced flowing range was needed, as normal [Water](https://wiki.luanti.org/Water "Water") would easily flow over.
+In Minetest Game, these rivers are made out of River Water, a liquid which has been introduced in the same version for the rivers. It has been introduced because a liquid with a reduced flowing range was needed, as normal Water would easily flow over.
 
 ### carpathian
 

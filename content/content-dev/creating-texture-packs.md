@@ -8,7 +8,7 @@ aliases:
 # Creating texture packs
 
 
-[Texture packs](https://wiki.luanti.org/Texture_Packs "Texture Packs") are a simple folder containing image files named after the default ones. Luanti has very few requirements for using a texture pack and texture packs are normally used by [games](https://wiki.luanti.org/Games "Games") for example Minetest Game.
+[Texture packs](/texture-packs "Texture Packs") are a simple folder containing image files named after the default ones. Luanti has very few requirements for using a texture pack and texture packs are normally used by games for example Minetest Game.
 
 Image Structure
 ---------------
@@ -21,7 +21,7 @@ The Luanti engine has very few base textures; these can be found under `~/your/p
 
 ### Game Specific Textures
 
-Each [game](https://wiki.luanti.org/Games "Games") that you install to Luanti will have different texture requirements due to the mods that games creator will have used to create the game. For example, Minetest Game includes 31 mods as of ver 5.1, some of these mods will have texture requirements and some will not.  
+Each game that you install to Luanti will have different texture requirements due to the mods that games creator will have used to create the game. For example, Minetest Game includes 31 mods as of ver 5.1, some of these mods will have texture requirements and some will not.  
 For example  
 ~/your/path/to/luanti/games/minetest\_game/mods/default/textures has an extensive array of textures to support this mod, were as ~/your/path/to/luanti/games/minetest\_game/mods/spawn has no textures to support the mod.
 
@@ -69,8 +69,6 @@ Setting up Custom Texture Pack Folder
 The Luanti engine supports sub-folders under the custom texture pack folder. Although these sub-folders can be named anything it is sometimes easiest to keep the subfolders the same name as the mod the textures are for. This can also help with identifying what textures might be missing if you wish to support multiple different games with your custom texture pack for example Minetest Game.
 
 ### Create Texture Pack Folder
-
-[![Tutorial texture pack location .PNG](https://wiki.luanti.org/images/thumb/d/d3/Tutorial_texture_pack_location_.PNG/200px-Tutorial_texture_pack_location_.PNG)](https://wiki.luanti.org/File:Tutorial_texture_pack_location_.PNG)
 
 Under ~/your/path/to/luanti/textures create a new folder that matches the name for your new texture pack for example: _**"Your\_Texture\_Pack\_Name"**_
 
@@ -250,7 +248,7 @@ The biggest factor in completing a texture pack is that you set yourself a reaso
 
 ##### Create an Alternate Texture Pack
 
-To get your feet wet and see if you even enjoy creating textures, it's often easiest to create an alternate texture pack for one of the smaller mods. Maybe a new graphic for an existing mod that you feel fits in better with the basic Luanti texture pack. There are examples of Alt texture packs [here](https://wiki.luanti.org/index.php?title=Other_texture_packs&action=edit&redlink=1 "Other texture packs (page does not exist)"). This can give you an idea or of what's needed and how long creating a texture pack will take. You can also wrap up the pack fairly quickly and get it out there for people to use.
+To get your feet wet and see if you even enjoy creating textures, it's often easiest to create an alternate texture pack for one of the smaller mods. Maybe a new graphic for an existing mod that you feel fits in better with the basic Luanti texture pack. This can give you an idea or of what's needed and how long creating a texture pack will take. You can also wrap up the pack fairly quickly and get it out there for people to use.
 
 ##### Focus on default
 
