@@ -5,40 +5,26 @@ aliases:
 ---
 
 # ContentDB
-The **ContentDB** (short for “Content Database”) is the official source to download [mods](/mods), games and [texture packs](/texture-packs) that have been developed by the Luanti community. It's the fastest and most convenient method to obtain those things.
+**ContentDB** (short for "Content Database") is the official source to download content such as mods, games and texture packs (collectively referred to as "packages") that have been developed by the Luanti community. It's the fastest and most convenient method to obtain those things, and is available both in the client and on the web.
 
-The ContentDB can be accessed in Luanti (“Content” tab) or with your browser via [content.luanti.org](https://content.luanti.org/).
+But ContentDB isn't just about supporting the in-game content downloader; it's common for technical users to find and review packages using the ContentDB website, but install using Git rather than the in-game installer. ContentDB's purpose is to be a well-formatted source of information about mods, games, and texture packs for Luanti.
 
-Usage
------
+## In Luanti
 
-### In Luanti
+The content browser in the Luanti main menu makes use of ContentDB to fetch the list of content available as well as downloading content to be installed. It can be accessed from the Content tab in the main menu by pressing the "Browse Online Content" button.
 
-(You need version 5.0.0 or later.)
+Here you can browse and directly download and install the things you like to install. Everything you download here will be available instantly once it's installed. Use the buttons on the top left to filter the content type, and use the search bar to search for packages by name.
 
-In the main menu, click on the “Content” tab. You will see a list of everything that you have already installed.
+Note that mods and games might receive updates by their respective authors. If an update is available there will be a number next to the Content tab in the main menu. Going into the content browser dialog will then show the installed packages that have new updates available.
 
-To get to the ContentDB, click on “Browse Online Content”. You will see a list of all available mods,
-
-Here you can browse and directly download and install the things you like to install. Everything you download here will be available instantly, once it's installed. No restart required.
-
-Use the drop-down list in the top right corner to filter the content type.
-
-Note that mods and games might receive updates by their respective authors. If an update is available, you can simply return to the ContentDB and click on “Update”.
-
-And that's really all there is to it!
-
-### The website
+## The website
 
 The website of the ContentDB is at [content.luanti.org](https://content.luanti.org/).
 
-The main advantage of the website is that it contains more information to read, more screenshots to admire and more links to click on. You can also download the stuff from here as well, but then you need to manually install it to the correct location, of course. See [mods](/mods) or [texture packs](/texture-packs) to learn more.
+The main advantage of the website is that it contains more information to read, more screenshots to admire and more links to click on. There are also features to review packages, add packages to personal collections, as well as a [freely available API](https://content.luanti.org/help/api/) for developers to fetch information about Luanti content. You can also manually download content to install yourself, whether it be by cloning the source repository with Git or downloading a respective release archive.
 
-On software freedom
--------------------
+## On software freedom
 
-Proprietary software, or things under restrictive license terms in general, are currently NOT banned on the ContentDB. But they are currently (as of 5.9.0) being hidden by default in Luanti.
+ContentDB generally only allows packages with content that is licensed under licenses that are considered Free by the FSF and/or the OSI. However there is currently at least an exception for non-free media licensed under Creative Commons licenses with restriction for non-commercial usage, which is allowed but will be hidden from the Luanti client by default and has appropriate warnings on its package page on the ContentDB website.
 
-This means that everything you can download from Luanti's Content tab is released under a free/libre license. But on the ContentDB website, you might run across proprietary things. Those things that are under restrictive licenses are always explicitly marked as such. Also, proprietary things are being heavily reduced in their ranking (the order things are displayed in).
-
-Please note that almost every contributor in the Luanti community contributes their things under free/libre software licenses. Proprietary software is a rare sight and even then, it's generally frowned upon.
+For more information, see the [Non-free Licenses](https://content.luanti.org/help/non_free/) page on ContentDB as well as [§ 4. Licenses](https://content.luanti.org/policy_and_guidance/#4-licenses) in the Package Inclusion Policy.
