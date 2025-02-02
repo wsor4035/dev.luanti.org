@@ -9,7 +9,7 @@ aliases:
 Security considerations
 -----------------------
 
-**Mods are by default run in a secure environment that restricts access to the filesystem and execution of external programs, however not all sandboxes are 100% secure. Additionally do not mark mods as trusted or disable mod security altogether if you are not aware of what you are doing, as they will run unsandboxed at the same privileges as Luanti. This applies not only to malicious mods but benign ones with security vulnerabilities. Excercise caution when downloading mods outside of official channels such as ContentDB where mods are vetted by the community for safety and security.**
+**Mods are by default run in a secure environment that restricts access to the filesystem and execution of external programs, however not all sandboxes are 100% secure. Additionally do not mark mods as trusted or disable mod security altogether if you are not aware of what you are doing, as they will run unsandboxed at the same privileges as Luanti. This applies not only to malicious mods but benign ones with security vulnerabilities. Exercise caution when downloading mods outside of official channels such as ContentDB where mods are vetted by the community for safety and security.**
 
 Installing a mod
 ----------------
