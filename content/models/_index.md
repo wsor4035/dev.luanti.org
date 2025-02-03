@@ -34,4 +34,4 @@ See https://api.luanti.org/nodes/#node-boxes.
 ## Editors
 
 * [BlockBench](/models/blockbench)
-* [Blender](https://wiki.luanti.org/Using_Blender)
+* [Blender](/models/using-blender)

@@ -6,7 +6,7 @@ aliases:
 
 # Tool
 
-A **tool** is an [item](https://wiki.luanti.org/Items "Items") which has some practical use to interact with the environment. Although some tools are unique, all tools have certain properties in common.
+A **tool** is an [item](/engine/items "Items") which has some practical use to interact with the environment. Although some tools are unique, all tools have certain properties in common.
 
 Usage
 -----
@@ -16,7 +16,7 @@ How to use a tool often depends on the tool itself. Most tools are used with the
 Mining tools
 ------------
 
-Many tools are mining tools; refer to [Mining](https://wiki.luanti.org/Mining "Mining") for more information.
+Many tools are mining tools; refer to Mining for more information.
 
 Weapons
 -------
@@ -32,18 +32,18 @@ A tool may wear off when used often. Whether and how fast a tool wears off depen
 
 You can tell how much a tool is worn off by a small colored bar below the inventory icon. A tool which doesn’t wear off or which is not worn off yet does not have such a bar under its inventory icon. When this bar becomes empty, the tool is destroyed. You might consider [repairing](#Repairing) a tool before it becomes destroyed.
 
-Weapons get used up by attacks, mining tools get used up by mining, other tools get used up for other reasons. Some tools might not get worn out at all, however. The tool wear caused by damage is proportional to the time from the last swing, i.e. a quick, low damage attack wears out the weapon less, while full blows also add the maximum wear. The wear caused by mining increases with the “difficulty” of the block being mined, the higher the difficulty, the higher the wear. Blocks that could have been dug by the [Hand](https://wiki.luanti.org/Hand "Hand") (default tool) do not add to the tool wear.
+Weapons get used up by attacks, mining tools get used up by mining, other tools get used up for other reasons. Some tools might not get worn out at all, however. The tool wear caused by damage is proportional to the time from the last swing, i.e. a quick, low damage attack wears out the weapon less, while full blows also add the maximum wear. The wear caused by mining increases with the “difficulty” of the block being mined, the higher the difficulty, the higher the wear. Blocks that could have been dug by the Hand (default tool) do not add to the tool wear.
 
-In [Creative Mode](https://wiki.luanti.org/Creative_Mode "Creative Mode"), tools generally do not wear.
+In Creative Mode, tools generally do not wear.
 
 ### Repairing
 
-A game can make a repairing [recipe](https://wiki.luanti.org/Crafting "Crafting") available. If this is the case, tools which wear off can be repaired by placing two tools of the some kind into the crafting grid. The recipe is shapeless. Other games and mods may change this percentage or even disallow repairing completely, or add a custom repairing method.
+A game can make a repairing recipe available. If this is the case, tools which wear off can be repaired by placing two tools of the some kind into the crafting grid. The recipe is shapeless. Other games and mods may change this percentage or even disallow repairing completely, or add a custom repairing method.
 
 Default tool
 ------------
 
-When you wield nothing at all (empty slot in highlighted [hotbar](https://wiki.luanti.org/Hotbar "Hotbar") slot) then you “wield” the default tool. All [games](https://wiki.luanti.org/Games "Games") have its own default tool and it may or may not be different. The default tool is not a tool because it’s not an item but it is called “default tool” because it shares many properties with tools.
+When you wield nothing at all (empty slot in highlighted hotbar slot) then you “wield” the default tool. All games have its own default tool and it may or may not be different. The default tool is not a tool because it’s not an item but it is called “default tool” because it shares many properties with tools.
 
 The default tool never wears off and doesn’t behave like an item; e.g. it can’t be thrown away.
 
@@ -51,18 +51,18 @@ The default tool may or may not be a mining tool and it may or may not be a weap
 
 If you carry an item which is not a tool (for example: a stone), it has the same properties as you’d have with the default tool. If the default tool is a digging tool and you try to mine a block with a tool for which it wasn’t build for, the mining time equals the mining time of the default tool.
 
-Tools in [Minetest Game](https://wiki.luanti.org/Games/Minetest_Game "Games/Minetest Game")
+Tools in Minetest Game
 -------------------------------------------------------------------------------------------
 
 The available tools are:
 
-* [Hand](https://wiki.luanti.org/Hand "Hand") – default tool; [mines](https://wiki.luanti.org/Mining "Mining") the weakest blocks, serves as a weak weapon
-* [Pickaxe](https://wiki.luanti.org/Pickaxe "Pickaxe") – mines cracky blocks like [Stone](https://wiki.luanti.org/Stone "Stone")
-* [Shovel](https://wiki.luanti.org/Shovel "Shovel") – mines crumbly blocks like [Dirt](https://wiki.luanti.org/Dirt "Dirt"), [Sand](https://wiki.luanti.org/Sand "Sand"), etc.
-* [Axe](https://wiki.luanti.org/Axe "Axe") – mines choppy blocks like [Trees](https://wiki.luanti.org/Tree "Tree")
-* [Sword](https://wiki.luanti.org/Sword "Sword") – hurts enemies
-* [Bucket](https://wiki.luanti.org/Bucket "Bucket") – collects [liquids](https://wiki.luanti.org/Liquid "Liquid")
-* [Screwdriver](https://wiki.luanti.org/Screwdriver "Screwdriver") – rotates blocks
+* Hand – default tool; mines the weakest blocks, serves as a weak weapon
+* Pickaxe – mines cracky blocks like Stone
+* Shovel – mines crumbly blocks like Dirt, Sand, etc.
+* Axe – mines choppy blocks like Trees
+* Sword – hurts enemies
+* Bucket – collects liquids
+* Screwdriver – rotates blocks
 
 In Minetest Game, repairing is enabled. You will receive a tool which is 2% less worn off.
 
