@@ -6,44 +6,45 @@ aliases:
 
 # IRC
 
-**IRC** stands for **I**nternet **R**elay **C**hat. We use it for real-time internet text messaging related to the project.
+**IRC** stands for **I**nternet **R**elay **C**hat. It is one of the platforms that Luanti uses for real-time chat and also serves as a common ground between other platforms such as Discord and Matrix.
 
 All the engaged people from the community and the developer team can be found there, and most prolific modders will also be available there.
 
-Some of the IRC channels are also bridged and accessible from the [Luanti Discord server](https://discord.gg/minetest), with message history kept. For IRC users who do not have a bouncer, most IRC channels have logs which are made available on [irc.luanti.org](https://irc.luanti.org/).
-
 ## Channels
 
-All of the Luanti channels are on irc.libera.chat. You can connect either via webchat or install an external IRC client.
+All of the Luanti IRC channels are on irc.libera.chat. You can connect either via webchat or install an external IRC client (see [IRC software](#irc-software)).
 
 ### General channels
 
-| Channel                                                                                                    | Topic                                                                     | Discord Bridged | Logs                                      |
-| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | --------------- | ----------------------------------------- |
-| [#luanti](irc://irc.libera.chat/#minetest) ([webchat](https://web.libera.chat/#luanti))                    | Casual discussion about everything Luanti.                                | Yes             | [1](https://irc.luanti.org/luanti)        |
-| [#luanti-dev](irc://irc.libera.chat/#luanti-dev) ([webchat](https://web.libera.chat/#luanti-dev))          | Core Luanti engine development discussion. **Please stay on topic here!** | Yes             | [2](https://irc.luanti.org/luanti-dev)    |
-| [#minetest-hub](irc://irc.libera.chat/#minetest-hub) ([webchat](https://web.libera.chat/#minetest-hub))    | Another general IRC channel which is mostly unused nowadays.              | Yes             | [3](https://irc.luanti.org/minetest-hub)  |
-| [#minetest-docs](irc://irc.libera.chat/#minetest-docs) ([webchat](https://web.libera.chat/#minetest-docs)) | IRC channel for the Minetest Docs project.                                | Yes             | [4](https://irc.luanti.org/minetest-docs) |
-| [#minetest-fr](irc://irc.libera.chat/#minetest-fr) ([webchat](https://web.libera.chat/#minetest-fr))       | General discussion in French                                              | No              | (No logs known)                           |
-| [#minetest-de](irc://irc.libera.chat/#minetest-de) ([webchat](https://web.libera.chat/#minetest-de))       | General discussion in German                                              | No              | (No logs known)                           |
-| [#minetest-es](irc://irc.libera.chat/#minetest-es) ([webchat](https://web.libera.chat/#minetest-es))       | General discussion in Spanish                                             | No              | (No logs known)                           |
+The primary IRC channels for the project. They are also bridged to the [Luanti Discord server](https://discord.gg/minetest) with full message history available as well as bridged to rooms in the [Luanti Matrix space](https://matrix.to/#/#minetest:tchncs.de). For IRC users who do not have a bouncer, the logs of the IRC channels are publicly available on [irc.luanti.org](https://irc.luanti.org/).
 
-### Games and mods
+| Channel                                                                                              | Topic                                                                     | Logs                               |
+| ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------------- |
+| [#luanti](irc://irc.libera.chat/#minetest) ([webchat](https://web.libera.chat/#luanti))              | Casual discussion about everything Luanti.                                | https://irc.luanti.org/luanti      |
+| [#luanti-dev](irc://irc.libera.chat/#luanti-dev) ([webchat](https://web.libera.chat/#luanti-dev))    | Core Luanti engine development discussion. **Please stay on topic here!** | https://irc.luanti.org/luanti-dev  |
+| [#luanti-docs](irc://irc.libera.chat/#luanti-docs) ([webchat](https://web.libera.chat/#luanti-docs)) | IRC channel for the Luanti Documentation project.                         | https://irc.luanti.org/luanti-docs |
 
-| Channel                                                                                                    | Topic            |
-| ---------------------------------------------------------------------------------------------------------- | ---------------- |
-| [#lordofthetest](irc://irc.libera.chat/#lordofthetest) ([webchat](https://web.libera.chat/#lordofthetest)) | Lord of the Test |
-| [#mineclone2](irc://irc.libera.chat/#mineclone2) ([webchat](https://web.libera.chat/#mineclone2))          | MineClone 2      |
+### International channels
 
-## Software
+Channels for discussion about Luanti in other languages. The activity in these channels are unknown, and no bridges or logging is available for these.
 
-If you like to chat a lot, webchat is not very convenient. So you should download an IRC client program. Here is some recommended free software:
+| Channel                                                                                               | Topic                          |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------ |
+| [#minetest-fr](irc://irc.libera.chat/#minetest-fr) ([webchat](https://web.libera.chat/#minetest-fr))  | General discussion in French   |
+| [#minetest-de](irc://irc.libera.chat/#minetest-de) ([webchat](https://web.libera.chat/#minetest-de))  | General discussion in German   |
+| [#minetest-es](irc://irc.libera.chat/#minetest-es) ([webchat](https://web.libera.chat/#minetest-es))  | General discussion in Spanish  |
 
-- [HexChat](https://hexchat.github.io/): Feature-rich program for Windows and GNU/Linux (and similar), continuation of now legacy XChat program
-- [Leafchat](http://www.leafdigital.com/software/leafchat/): Simple program for Windows, GNU/Linux and Mac OS
-- [irssi](https://irssi.org/): Pure console client
+## IRC Software
 
-If you have difficulties in understanding IRC, [<http://www.irchelp.org/>](https://www.irchelp.org/) is a good resource.
+If you like to chat a lot, webchat is not very convenient. So you should download an IRC client program. Here is some recommended Free IRC software:
+
+- [HexChat](https://hexchat.github.io/): Feature-rich IRC client for Windows and Linux, technically abandoned but still very functional.
+- [Revolution IRC](https://f-droid.org/en/packages/io.mrarm.irc/): IRC client for Android devices. Using a bouncer is recommended to not repeatedly get disconnected when using IRC from a phone.
+- [The Lounge](https://thelounge.chat/): Self-hostable server software acting both as a web IRC client and an IRC bouncer.
+- [ZNC](https://wiki.znc.in/ZNC): IRC bouncer software, install this on a server and connect to it with a regular IRC client to always stay connected to IRC channels, with channel history preserved as long as the bouncer stays online.
+- [irssi](https://irssi.org/): Pure console client for terminal users.
+
+For more information about IRC, see [irchelp.org](https://www.irchelp.org/).
 
 ## Rules
 
