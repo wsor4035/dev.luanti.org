@@ -69,7 +69,7 @@ _Note to coredevs_: Creating a new language directly from weblate is sufficient,
 
 #### How to merge translations from Hosted Weblate
 
-Translations should be merged in bulk, and not too often, to not create too large "noise" in the commit log. A good schedule is once every few months and at the start of the **feature freeze**. This section explains the necessary steps for cored evs. You will need owner access to the hosted repo in order to be able to push the "Rebase" button.
+Translations should be merged in bulk, and not too often, to not create too large "noise" in the commit log. A good schedule is once every few months and at the start of the **feature freeze**. This section explains the necessary steps for core devs. You will need owner access to the hosted repo in order to be able to push the "Rebase" button.
 
 As of January 2025, the list contains the following people:
 * celeron55
@@ -83,24 +83,24 @@ As of January 2025, the list contains the following people:
 
 For an up to date list consult someone with access to look at the people page in Weblate.
 
-##### Setting up
-
-Add weblate as remote: `git remote add weblate [https://hosted.weblate.org/git/minetest/minetest/](https://hosted.weblate.org/git/minetest/minetest/)`.
-
-##### Once every translation
+Add weblate as remote: `git remote add weblate https://hosted.weblate.org/git/minetest/minetest/`.
 
 1.  Visit [Repo maintenance](https://hosted.weblate.org/projects/minetest/minetest/#repository), and lock the repository to prevent changes from users while you are editing.
 2.  Generate a clean history, without merge commits. Push the "Rebase" button on the repository.
 3.  Do `git remote update weblate`. Confirm e.g. with `git log --graph weblate/master` that it bases on upstream's master, and only has "Translated using Weblate" as additional commits, no merge commits.
-4.  As every weblate user can freely edit translations, there can be vandalism. Therefore, check the translation commits, e.g. with help from online translator services like Google Translate, other core devs, or trusted members from the community. It might be helpful to push the commits to your GitHub clone's branch, then you have commit http links to share. In the case of required changes, let them do it over the weblate interface (after you've unlocked), and start with 2. again. Of course, its up to you to how much you want to follow this rule, as checking changes can be quite time consuming. Feel free to refine your scope e.g. to new and not yet trusted contributors.
+4.  As every weblate user can freely edit translations, there can be vandalism. Therefore, check the translation commits, e.g. with online translator services like Google Translate, other core devs, or trusted members from the community. In the case of required changes, let them do it over the weblate interface (after you've unlocked), and start with step 2 again. Of course, its up to you to how much you want to follow this rule, as checking changes can be quite time consuming. Feel free to refine your scope to new and not yet trusted contributors.
 5.  Check out the branch from Weblate's repo: `git checkout weblate/master`
-6.  Reorder the commits from the same author, and squash them. `git rebase -i` is your friend (especially after you set it up to show the author, see [this Stack Overflow answer](http://stackoverflow.com/a/35851846) on how to do it). As a good tip, rather do multiple runs of such an interactive rebase where you do small changes each, than one big run which then fails in the middle of the business. **`./util/reorder_translation_commits.py` can do the commit reordering for you.**
+6.  Reorder the commits from the same author, and squash them by running `git rebase -i master`. From a separate terminal run `./util/reorder_translation_commits.py` and then continue the rebase (without re-saving the file).
 7.  Confirm that `git diff weblate/master` is empty, to make sure that you didn't mess up at step 6. Otherwise use `git reflog` to find the latest rebase pass that worked, and retry the commits
-8.  If _required/desired_, do these: (`--author="updatepo.sh <script@mt>"` should be used when committing changes made by the scripts)
-    1.  Update `minetest.conf.example` and the dummy `*.cpp` translation file and commit. Do this by uncommenting the lines at the end of builtin/mainmenu/settings/init.lua
+8.  If _required/desired_, do these: (use `--author="updatepo.sh <script@mt>"` when committing changes made by the scripts)
+    1.  Update `minetest.conf.example` and the dummy `*.cpp` translation file and commit. Do this by uncommenting the lines at the end of `builtin/common/settings/init.lua`.
     2.  Run `util/updatepo.sh`, and commit. Note that it creates lots of unnecessary changes, and enlarges repository size disproportionately, therefore run it even less often.
-9.  Push to the [GitHub repo](https://github.com/luanti-org/luanti) with e.g. `git push origin HEAD:master`
+9.  Push to the [GitHub repo](https://github.com/luanti-org/luanti) with `git push origin HEAD:master`. If you want to check if CI passes first you can also use a temporary branch first.
 10.  Reset the Weblate remote ("Reset" button), rebase it to match now current master, and unlock it. If pushed commits do not yet show up in Weblate you may have to press the "Pull" button.
+
+Note: For the rebasing script to work you need to set git-rebase up to show the author, see [this Stack Overflow answer](http://stackoverflow.com/a/35851846).
+
+Completing step 8 is required at least once per development cycle before a release. Typically this happens at the start of a feature freeze.
 
 ### Server-side builtin translations (`minetest.get_translator`)
 
