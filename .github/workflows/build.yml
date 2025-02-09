@@ -14,3 +14,8 @@ jobs:
         run: npm ci
       - name: Build site to check for errors
         run: npm run build:ci
+      - name: check that links are all valid
+        uses: JustinBeckwith/linkinator-action@v1
+        with:
+          paths: "*.html"
+          serverRoot: "./public/"
