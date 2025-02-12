@@ -96,7 +96,7 @@ The [touchscreen](#touchscreen) is used for everything.
 Touchscreen support was mobile (Android) only till version 5.5.0 when [desktop support](https://github.com/luanti-org/luanti/pull/10729) was added. Runtime 
 toggling of touchscreen controls was [added](https://github.com/luanti-org/luanti/pull/14075) in 5.9.0. Rudimentary detection was 
 [added](https://github.com/luanti-org/luanti/pull/14400) in 5.9.0, with [full support](https://github.com/luanti-org/luanti/pull/14542) being added 
-in 5.10.0 
+in 5.10.0.
 {{< /notice >}}
 
 In release 5.10.0 the touchscreen interface was improved to use a grid layout for controls with text being listed under the controls so users no longer 
@@ -104,7 +104,7 @@ had to guess what they did.
 
 {{< video src="https://samsinventory.docs.luanti.org/files/videos/touchscreen-grid.mp4" type="video/mp4" >}}
 
-In release 5.11.0 an editor was added for rearranging the controls
+In release 5.11.0 an editor was added for rearranging the controls.
 
 {{< video src="https://samsinventory.docs.luanti.org/files/videos/touchscreen-editor.mp4" type="video/mp4" >}}
 
