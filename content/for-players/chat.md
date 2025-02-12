@@ -13,7 +13,7 @@ The **in-game chat functionality** allows players to communicate with each other
 ## Sending messages
 First of all, before you can chat anything at all, you require the “shout” privilege. Most servers give you this privilege by default, or they may require you to do something before you are granted access to chat.
 
-You can chat either by opening the chat window or the [console](/console/) which can be opened with the keys T or F10, respectively (assuming you use the default key bindings). Use the chat window or the console to enter a chat message. There are two types of chat messages: Public and direct.
+You can chat either by opening the chat window or the [console](/for-players/console/) which can be opened with the keys T or F10, respectively (assuming you use the default key bindings). Use the chat window or the console to enter a chat message. There are two types of chat messages: Public and direct.
 
 ### Public messages
 A public message is a message which is visible to all connected players.
@@ -60,7 +60,7 @@ You can send a direct message (DM) to someone by using the `/msg` [server comman
 /msg <player> <message>
 ```
 
-Replace `<message>` by your actual message and `<player>` by the name of the player you want to send the message to. The message won’t be publicly visible in the chatlog and only appears to you and the other player. Be aware that direct messages are not _really_ secret, some people could still, in principle, intercept them.
+Replace `<message>` by your actual message and `<player>` by the name of the player you want to send the message to. The message won’t be publicly visible in the chat log and only appears to you and the other player. Be aware that direct messages are not _really_ secret, some people could still, in principle, intercept them.
 
 Example: If your name is “Alberto” and you entered `/msg Presto I want to show you my hidden chest.`, then this will appear in the chat log of Presto:
 
@@ -72,7 +72,7 @@ DM from Alberto: I want to show you my hidden chest.
 
 The chat log’s primary function is to log and show the chat messages in the order of appearance. The latest message appears at the lowest line.
 
-You see the chat log on the [HUD](/hud/) at the upper left part of the screen and in the console. You need to have the HUD enabled or the console opened in order to see the chat log. You can toggle the HUD on and off with F1 (default key binding). The chatlog you see on the HUD is somewhat short and only shows the messages for a limited time. Use the console for a full scrollable chat log.
+You see the chat log on the [HUD](/hud/) at the upper left part of the screen and in the console. You need to have the HUD enabled or the console opened in order to see the chat log. You can toggle the HUD on and off with F1 (default key binding). The chat log you see on the HUD is somewhat short and only shows the messages for a limited time. Use the console for a full scrollable chat log.
 
 These are the following types of messages which can appear in the chat log:
 
