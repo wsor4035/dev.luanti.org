@@ -93,7 +93,7 @@ The [touchscreen](#touchscreen) is used for everything.
 ### Touchscreen
 
 {{< notice note >}}
-Touchscreen support was mobile (Android) only till version 5.5.0 when [support](https://github.com/luanti-org/luanti/pull/10729) was added. Runtime 
+Touchscreen support was mobile (Android) only till version 5.5.0 when [desktop support](https://github.com/luanti-org/luanti/pull/10729) was added. Runtime 
 toggling of touchscreen controls was [added](https://github.com/luanti-org/luanti/pull/14075) in 5.9.0. Rudimentary detection was 
 [added](https://github.com/luanti-org/luanti/pull/14400) in 5.9.0, with [full support](https://github.com/luanti-org/luanti/pull/14542) being added 
 in 5.10.0 
