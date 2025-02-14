@@ -152,9 +152,8 @@ _Note_: Don't cheat on this by testing in Wine, it has happened that things cras
 *   All official builds are hosted at Github: [https://github.com/luanti-org/luanti/releases](https://github.com/luanti-org/luanti/releases)
 *   The Windows build is created by CI
     *   (see above)
-*   The macOS build is created by [Github Actions](https://github.com/luanti-org/luanti/actions/workflows/macos.yml)
-    *   you will only be able to grab the build **after** the release has been pushed
-    *   download the artifact, unpack it once, you should have a `luanti-5.x.x-osx.zip`. This is then uploaded.
+*   The macOS build is built and signed by SFENCE
+    *   the file is named something like `luanti_5.11.0-macos11.3_arm64.zip`, which contains the minimum macOS version it can run on.
 *   Android APKs are also uploaded here when they're done
     *   these are signed before uploading, see a few sections below
 
@@ -232,7 +231,7 @@ After releasing
 
 ### Write a release notice
 
-*   Don't forget to edit the luanti.org page ([Repo](https://github.com/luanti-org/luanti.github.io)).
+*   Don't forget to edit the luanti.org page ([Repo](https://github.com/luanti-org/luanti-org.github.io)).
     *   currently you will need to update machine readable metadata in \_data/release.yml and downloads.html itself.
 *   Post a new topic in the [News section](https://forum.luanti.org/viewforum.php?f=18) of the forum. **See [Changelog](/Changelog "Changelog").**
     *   It is customary to sticky the newest release topic and lock older ones.
