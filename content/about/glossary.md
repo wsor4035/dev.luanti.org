@@ -2,6 +2,7 @@
 title: Glossary
 aliases:
 - /Terminology
+- /glossary
 ---
 
 # Glossary

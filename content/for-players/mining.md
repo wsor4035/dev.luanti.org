@@ -2,6 +2,7 @@
 title: Mining
 aliases:
 - /Mining
+- /mining
 ---
 
 # Mining

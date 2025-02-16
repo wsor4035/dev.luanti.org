@@ -2,6 +2,7 @@
 title: Map generator evolution
 aliases:
 - "/Map_Generator_Evolution"
+- /mapgen/evolution
 ---
 
 # Map Generator Evolution

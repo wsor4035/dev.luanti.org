@@ -2,6 +2,7 @@
 title: Gamepads
 aliases:
 - /Gamepads
+- /gamepads
 ---
 
 # Gamepads

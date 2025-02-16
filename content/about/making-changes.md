@@ -1,5 +1,7 @@
 ---
 title: Making Changes
+aliases:
+- /about-this-site/making-changes
 ---
 
 # Making Changes

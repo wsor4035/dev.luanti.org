@@ -3,6 +3,7 @@ title: Changelog
 aliases:
 - /Changelog
 - /OldChangelog
+- /changelog
 ---
 
 # Changelog

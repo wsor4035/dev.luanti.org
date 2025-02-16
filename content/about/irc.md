@@ -1,7 +1,8 @@
 ---
 title: IRC
 aliases:
-  - /IRC
+- /IRC
+- /irc
 ---
 
 # IRC

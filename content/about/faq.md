@@ -2,6 +2,7 @@
 title: FAQ
 aliases:
 - /FAQ
+- /faq
 ---
 
 # FAQ

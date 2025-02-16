@@ -2,6 +2,7 @@
 title: Troubleshooting
 aliases:
 - /Troubleshooting
+- /troubleshooting
 ---
 
 # Troubleshooting

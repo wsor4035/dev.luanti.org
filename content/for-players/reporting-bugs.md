@@ -2,6 +2,7 @@
 title: Reporting Bugs
 aliases:
 - /Reporting_bugs
+- /reporting-bugs
 ---
 
 # Reporting bugs

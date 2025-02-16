@@ -2,6 +2,7 @@
 title: Mobs
 aliases:
 - /Mobs
+- /mobs
 ---
 
 # Mobs

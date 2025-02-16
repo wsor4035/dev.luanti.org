@@ -2,6 +2,7 @@
 title: Light
 aliases:
 - /Light
+- /light
 ---
 
 # Light

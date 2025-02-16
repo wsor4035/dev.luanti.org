@@ -3,6 +3,7 @@ title: Objects
 aliases:
 - /Engine/Objects
 - /Unknown_Object
+- /engine/objects
 ---
 
 # Engine/Objects

@@ -2,6 +2,7 @@
 title: Controls
 aliases:
 - /Controls
+- /controls
 ---
 
 # Controls

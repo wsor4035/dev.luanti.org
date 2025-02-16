@@ -3,6 +3,7 @@ title: Overview of Luanti forks
 aliases:
 - /Overview_of_Luanti_forks
 - /Overview_of_Minetest_forks
+- /overview-of-luanti-forks
 ---
 
 # Luanti forks

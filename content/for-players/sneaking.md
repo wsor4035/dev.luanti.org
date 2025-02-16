@@ -2,6 +2,7 @@
 title: Sneaking
 aliases:
 - /Sneaking
+- /sneaking
 ---
 
 # Sneaking

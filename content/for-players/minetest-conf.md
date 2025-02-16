@@ -2,6 +2,7 @@
 title: Minetest.conf
 aliases:
 - /Minetest.conf
+- /minetest-conf
 ---
 
 # Minetest.conf

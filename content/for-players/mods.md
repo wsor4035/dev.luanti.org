@@ -2,6 +2,7 @@
 title: Mods
 aliases:
 - /Mods
+- /mods
 ---
 
 # Mods

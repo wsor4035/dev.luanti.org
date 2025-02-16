@@ -2,6 +2,7 @@
 title: Coordinates
 aliases:
 - /Coordinates
+- /coordinates
 ---
 
 # Coordinates

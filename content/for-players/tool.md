@@ -2,6 +2,7 @@
 title: Tool
 aliases:
 - /Tool
+- /tool
 ---
 
 # Tool

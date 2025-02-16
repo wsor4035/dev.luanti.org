@@ -1,5 +1,7 @@
 ---
 title: Local Development
+aliases:
+- /about-this-site/local-development
 ---
 
 # Local Development

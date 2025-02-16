@@ -2,6 +2,7 @@
 title: Cheating
 aliases:
 - /Cheating
+- /cheating
 ---
 
 # Cheating

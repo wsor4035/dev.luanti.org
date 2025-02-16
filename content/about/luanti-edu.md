@@ -3,6 +3,7 @@ title: LuantiEDU
 aliases:
 - /MinetestEDU
 - /LuantiEDU
+- /luanti-edu
 ---
 
 # LuantiEDU

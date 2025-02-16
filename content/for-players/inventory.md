@@ -3,6 +3,7 @@ title: Inventory
 aliases:
 - /Inventory
 - /Inventory_menu
+- /inventory
 ---
 
 # Inventory
