@@ -2,6 +2,7 @@
 title: Liquid
 aliases:
 - /Liquid
+- /liquid
 ---
 
 # Liquid

@@ -1,5 +1,7 @@
 ---
 title: Rules
+aliases:
+- /about-this-site/rules
 ---
 
 # Rules

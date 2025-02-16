@@ -2,6 +2,7 @@
 title: Installing Client-Side Mods
 aliases:
 - /Installing_Client-Side_Mods
+- /installing-client-side-mods
 ---
 
 # Installing Client-Side Mods

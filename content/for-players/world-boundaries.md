@@ -2,6 +2,7 @@
 title: World Boundaries
 aliases:
 - /World_boundaries
+- /world-boundaries
 ---
 
 # World Boundaries

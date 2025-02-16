@@ -2,6 +2,7 @@
 title: Itemstrings
 aliases:
 - /Itemstrings
+- /itemstrings
 ---
 
 # Itemstrings

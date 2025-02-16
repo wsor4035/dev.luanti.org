@@ -2,6 +2,7 @@
 title: Celeron55
 aliases:
 - /Celeron55
+- /celeron55
 ---
 
 # Celeron55

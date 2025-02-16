@@ -2,6 +2,7 @@
 title: Installing Mods
 aliases:
 - /Installing_Mods
+- /installing-mods
 ---
 
 # Installing Mods

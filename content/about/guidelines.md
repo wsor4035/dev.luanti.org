@@ -1,5 +1,7 @@
 ---
 Title: Guidelines
+aliases:
+- /about-this-site/guidelines
 ---
 
 # Guidelines

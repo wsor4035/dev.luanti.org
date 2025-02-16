@@ -3,6 +3,7 @@ title: Punching
 aliases:
 - /Punching
 - /punch
+- /punching
 ---
 
 # Punching

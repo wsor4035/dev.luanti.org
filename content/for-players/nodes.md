@@ -5,6 +5,7 @@ aliases:
 - /Air
 - /Ignore
 - /Unknown_Node
+- /nodes
 ---
 
 # Nodes

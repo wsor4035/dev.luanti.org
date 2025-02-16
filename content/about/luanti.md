@@ -3,6 +3,7 @@ title: Luanti
 aliases:
 - /Luanti
 - /Minetest
+- /luanti
 ---
 
 # Luanti

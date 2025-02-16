@@ -3,6 +3,7 @@ title: Chat
 aliases:
 - /Chat
 - /Chat_window
+- /chat
 ---
 
 # Chat

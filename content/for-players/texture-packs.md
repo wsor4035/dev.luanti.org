@@ -2,6 +2,7 @@
 title: Texture Packs
 aliases:
 - /Texture_Packs
+- /texture-packs
 ---
 
 # Texture Packs

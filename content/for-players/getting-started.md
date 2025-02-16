@@ -2,6 +2,7 @@
 title: Getting Started
 aliases:
 - /Getting_Started
+- /getting-started
 ---
 
 # Getting Started

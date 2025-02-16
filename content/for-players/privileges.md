@@ -2,6 +2,7 @@
 title: Privileges
 aliases:
 - /Privileges
+- /privileges
 ---
 
 # Privileges

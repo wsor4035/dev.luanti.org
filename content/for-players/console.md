@@ -2,6 +2,7 @@
 title: Console
 aliases:
 - /Console
+- /console
 ---
 
 # Console

@@ -2,6 +2,7 @@
 title: ContentDB
 aliases:
 - /ContentDB
+- /contentdb
 ---
 
 # ContentDB

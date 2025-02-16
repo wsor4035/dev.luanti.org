@@ -4,6 +4,7 @@ aliases:
 - /Item_stack
 - /Items
 - /Unknown_Item
+- /engine/items
 ---
 
 # Items

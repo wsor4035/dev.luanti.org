@@ -2,6 +2,7 @@
 title: Worlds
 aliases:
 - /Worlds
+- /worlds
 ---
 
 # Worlds

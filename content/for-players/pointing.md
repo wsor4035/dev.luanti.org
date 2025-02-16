@@ -2,6 +2,7 @@
 title: Pointing
 aliases:
 - /Pointing
+- /pointing
 ---
 
 # Pointing
