@@ -650,7 +650,7 @@ Released on 4 August 2022
 * Docs: Add description of privileges (_x2048_)
 * Increase max FPS on Android to 60 (_ROllerozxa_)
 * Add many limits to settingtypes + engine (_Wuzzy_, _SmallJoker_)
-* Reorganise settingtypes.txt (_rubenwardy_)
+* Reorganize settingtypes.txt (_rubenwardy_)
 
 ### Script API / Modding
 
@@ -1533,7 +1533,7 @@ Note: 5.0.0 is based on 0.4.16, not 0.4.17. 0.4.17 was created by backporting ch
 
 ### New Version Scheme
 
-Basically, the leading 0 has been dropped. The [version scheme](/version-number) was thus changed from
+Basically, the leading 0 has been dropped. The [version scheme](/for-engine-devs/version-number) was thus changed from
 
 ```
 ZERO.MAJOR.MINOR.PATCH
