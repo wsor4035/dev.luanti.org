@@ -30,7 +30,7 @@ In the inventory, item stacks are represented by an icon and optionally a number
 
 Some dropped item stacks
 
-Item stacks appear in the world as [objects](/objects). They are represented by some sort of symbol. For blocks, the icon is a rotating mini-version of it. Other things represented by the inventory icon. In the world, any item stack appears just as a single object, even with a stack size of 99. But item stacks with a larger stack size will appear larger than item stacks with a low stack size. An item stack can be collected by [punching](/for-players/punching) it. Item stacks are subject to gravity. If multiple item stacks of the same item occupy the same block position, they will merge into one object, as long the stack limit is not exceeded. Dropped items also have a life time. If they stay untouched in the world for too long, they disappear. The life time can be changed via [minetest.conf](/for-players/minetest-conf) (`item_entity_ttl`).
+Item stacks appear in the world as [objects](/for-engine-devs/objects). They are represented by some sort of symbol. For blocks, the icon is a rotating mini-version of it. Other things represented by the inventory icon. In the world, any item stack appears just as a single object, even with a stack size of 99. But item stacks with a larger stack size will appear larger than item stacks with a low stack size. An item stack can be collected by [punching](/for-players/punching) it. Item stacks are subject to gravity. If multiple item stacks of the same item occupy the same block position, they will merge into one object, as long the stack limit is not exceeded. Dropped items also have a life time. If they stay untouched in the world for too long, they disappear. The life time can be changed via [minetest.conf](/for-players/minetest-conf) (`item_entity_ttl`).
 An item stack that is stuck in a solid block will be pushed outside of it until it reaches a non-solid block.
 
 Dropped items can appear for many reasons:
@@ -42,7 +42,7 @@ Dropped items can appear for many reasons:
 
 ### Modding item stacks
 
-Mods can change the stack limit, or the behaviour of the dropped items.
+Mods can change the stack limit, or the behavior of the dropped items.
 
 For example:
 
@@ -59,7 +59,7 @@ Inventory image of an unknown item.
 
 An **unknown item** is a pseudo-item in Luanti to represent an item of which the item definition is unknown. These items should never appear in the game, and it's always an error when you encounter it.
 
-### Behaviour
+### Behavior
 
 Most types of world interactions are not possible. Dropping an unknown item is not possible. You can still store and move this item in inventories.
 
@@ -69,7 +69,7 @@ Internally, an unknown item still knows the “real” item it represents and th
 
 ### Troubleshooting
 
-A common reason for this item to appear is when you have previously activated a [mod](/for-players/mods) which added some new item, stored some of these items in an inventory, then later deactivated said mod. Now all items from this mod will appear as an unknown items. In this case, you can solve this simply by enabling the missing mod again. If you forgot to which mod this item belonged, rightclick with the item in hand to see its itemstring. The part before the column is the mod name.
+A common reason for this item to appear is when you have previously activated a [mod](/for-players/mods) which added some new item, stored some of these items in an inventory, then later deactivated said mod. Now all items from this mod will appear as an unknown items. In this case, you can solve this simply by enabling the missing mod again. If you forgot to which mod this item belonged, right-click with the item in hand to see its itemstring. The part before the column is the mod name.
 
 Another source of this item is a bug in mods or games or just general developer clumsiness. Developers of a game may have made a mistake or removed items intentionally without any replacement. Complain to the game authors if this happens, as this is generally considered poor development practice. If unknown items occur without you using any mods, this is almost certainly a bug.
 
@@ -81,4 +81,4 @@ See also
 --------
 
 *   [Nodes](/for-players/nodes)
-*   [Objects](/objects)
+*   [Objects](/for-engine-devs/objects)

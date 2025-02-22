@@ -619,7 +619,7 @@ Roadmapped
 
 **PR discussion/reviews**
 
-* [#11545](https://github.com/luanti-org/luanti/pull/11545) <- someone should review this --[Sfan5](/User:Sfan5 "User:Sfan5") ([talk](/index.php?title=User_talk:Sfan5&action=edit&redlink=1 "User talk:Sfan5 (page does not exist)"))
+* [#11545](https://github.com/luanti-org/luanti/pull/11545) <- someone should review this --sfan5
     * x2048
 * [#12367](https://github.com/luanti-org/luanti/pull/12367) some questions here
     * mostly answered before meeting
@@ -1108,7 +1108,7 @@ Arranged by: Krock
 
 **MTG discussion/reviews**
 
-* Tools: rebalance ([https://github.com/luanti-org/minetest_game/issues/1681](https://github.com/luanti-org/minetest_game/issues/1681))
+* Tools: re-balance ([https://github.com/luanti-org/minetest_game/issues/1681](https://github.com/luanti-org/minetest_game/issues/1681))
     * Needs either a levelling system and/or special abilities for different materials to add variety
     * paramat suggests removing bronze, which is incorrectly a stronger tool than steel ([http://irc.luanti.org/minetest-dev/2018-04-07#i\_5272959](http://irc.luanti.org/minetest-dev/2018-04-07#i_5272959))
     * Future mese concept: [http://irc.luanti.org/minetest-dev/2018-04-07#i\_5273013](http://irc.luanti.org/minetest-dev/2018-04-07#i_5273013)
