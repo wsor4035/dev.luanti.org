@@ -15,7 +15,7 @@ See [About](content/about/_index.md) for more information
 - scripts
   - `build`: Builds the site to ensure changes are valid
   - `build:ci`: Builds the site but fails if any warnings are detected. Used in our CI pipeline.
-  - `format:fix`: Fixes formatting of the `package.json` file
+  - `format`: Fixes formatting of the codebase
   - `start`: Builds and serves the site at http://localhost:1313 with Hugo.
   - `test:a11y`: Builds and serves the site, then uses Playwright and axe to test accessibility
   - `test:a11y:tests`: Not meant for independent use, only as part of `test:a11y`
@@ -26,6 +26,8 @@ See [About](content/about/_index.md) for more information
 - devDependencies
   - [`@axe-core/playwright`](https://npmjs.com/package/@axe-core/playwright): A11y tester bindings for Playwright
   - [`@playwright/test`](https://npmjs.com/package/@playwright/test): Browser automation and test library
-  - [`cspell`](https://npmjs.com/package/cspell): Spellchecker
+  - [`cspell`](https://npmjs.com/package/cspell): Spell-checker
+  - linkinator: Link-checker (WIP)
+  - prettier: Formatter (exact version pinned per [official recommendation](https://prettier.io/docs/next/install#summary))
   - [`sort-package-json`](https://npmjs.com/package/sort-package-json): Sorts package.json files for consistency
   - [`start-server-and-test`](https://npmjs.com/package/start-server-and-test): Allows easy setup and teardown of complex tests, like our a11y tests
