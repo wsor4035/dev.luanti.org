@@ -15,7 +15,7 @@ If a media file required on the server doesn't exist on the remote server or the
 
 ## Public Instance
 
-Sofar generously hosts a [remote media server](https://github.com/minetest-tools/mtmediasrv) at https://minetestmedia.foo-projects.org/ for public usage. It does a nightly check of cdb for [packages with a git source](https://forum.luanti.org/viewtopic.php?p=421837#p421837) to add there media. A list of the package remotes can be found [here](https://minetestmedia.foo-projects.org/remotes). For futher details and updates checkout this forum thread: https://forum.luanti.org/viewtopic.php?t=18951.
+Sofar generously hosts a [remote media server](https://github.com/minetest-tools/mtmediasrv) at https://minetestmedia.foo-projects.org/ for public usage. It does a nightly check of cdb for [packages with a git source](https://forum.luanti.org/viewtopic.php?p=421837#p421837) to add there media. A list of the package remotes can be found [here](https://minetestmedia.foo-projects.org/remotes). For further details and updates checkout this forum thread: https://forum.luanti.org/viewtopic.php?t=18951.
 
 ## Technical info
 
