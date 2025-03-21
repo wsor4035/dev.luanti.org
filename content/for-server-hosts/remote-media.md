@@ -13,9 +13,17 @@ Usually this is a more efficient means of transferring for servers with large am
 
 If a media file required on the server doesn't exist on the remote server or the media server can't be connected to for some reason, it will fall back to the traditional transfer method. This also applies if cURL support or the `enable_remote_media_server` setting is disabled.
 
+## Public Instance
+
+Sofar generously hosts a [remote media server](https://github.com/minetest-tools/mtmediasrv) at https://minetestmedia.foo-projects.org/ for public usage. It does a nightly check of cdb for [packages with a git source](https://forum.luanti.org/viewtopic.php?p=421837#p421837) to add their media. A list of the package remotes can be found [here](https://minetestmedia.foo-projects.org/remotes). For further details and updates checkout this forum thread: https://forum.luanti.org/viewtopic.php?t=18951.
+
 ## Technical info
 
+**In version 5.11.0 or before:**  
 At first, the client will POST request `[remote_media]index.mth`, which contains the list of (SHA1) hashes that are available on the server. The client will then check what hashes it wants, but does not currently have cached, and requests `[remote_media][SHA1 hash]` for each one if it exists in the hash index. If it doesn't exist, it will fall back to traditional transfer.
+
+**As of version 5.12.0:**  
+The client request to `[remote_media]index.mth` [was changed](https://github.com/luanti-org/luanti/pull/15885) to a GET request to facilitate using static hosting for remote media
 
 Preferably the server should support HTTP/2, though unfortunately the official Android and Windows builds do not come with a cURL linked against libnghttp2 currently. Linux however will usually be linked against a cURL system library that is linked against libnghttp2.
 
