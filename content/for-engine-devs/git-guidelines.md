@@ -32,6 +32,12 @@ The `luanti` and `minetest_game` repositories contain the stable-0.4 branch, whi
 - You can push something to upstream \[1\] only if two members of the core team \[2\] agree on it. (See also [Organization](/for-engine-devs/organization))
   - Two for-votes are required for code to be mergeable upstream. Any against vote has to be resolved in a meeting before merge.
   - For PRs: The second reviewer should invalidate the first review when major changes happened to the PR in the meantime.
+  - An exception can be made for low-risk PRs under the "one approval rule" (the corresponding tag should then be used).
+    One approval (including your own approval) is enough when all of these match:
+    - The change doesn't touch the disk and network formats
+    - The change doesn't touch the main server-side Lua API
+    - You are able to argue the change is not likely to cause issues (i.e. it's simple)
+    - The CI build passes on multiple platforms
 - Commit messages must start with a capital letter and must be in the present tense. (look at the commit log)
 - Do not modify history (i.e. force push) older than 10 minutes.
 - Use rebase, not merge, to get linear history. \[3\]
