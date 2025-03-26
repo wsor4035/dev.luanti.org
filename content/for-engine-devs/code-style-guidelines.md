@@ -149,10 +149,12 @@ for (s16 x = pmin.X; x <= pmax.X; x++) {
 - Avoid passing non-`const` references to functions.
 - Don't use initializer lists unless absolutely necessary (initializing an object inside a class, or initializing a reference).
 - Try to minimize the use of exceptions.
-- Avoid operator overloading like the plague.
-  - Exceptions to this rule are `operator==` and `operator!=` which make sense to define for custom types.
-- Templates are okay if their convenience justifies it. But don't turn the code into a template maze.
-- Usage of macros is not discouraged, just don't overdo it [like X.org](http://cgit.freedesktop.org/xorg/xserver/tree/randr/rrscreen.c?id=01e18af17f8dc91451fbd0902049045afd1cea7e#n325). It's better to use inline functions or lambdas instead.
+- Avoid operator overloading. Especially any "clever" uses of it.
+  - An obvious exception is `operator==`, `operator!=` and `operator<` which makes sense to define for custom types.
+- Templates are okay if their convenience justifies it. But don't turn the code into a maze.
+- Usage of macros is not discouraged, just don't overdo it [like X.org](https://cgit.freedesktop.org/xorg/xserver/tree/randr/rrscreen.c?id=01e18af17f8dc91451fbd0902049045afd1cea7e#n325).
+  However, it's better to use inline functions or lambdas when possible.
+- Don't use `std::stringstream` if you don't need to.
 - Don't use distracting and unnecessary amounts of object-oriented abstraction.
   - Don't add unnecessary design patterns to your code, such as factories/providers/sources.
   - This also applies to interfaces. If there is exactly one implementor you probably don't need one.
@@ -160,12 +162,13 @@ for (s16 x = pmin.X; x <= pmax.X; x++) {
 **Do**:
 
 - Consider `std::unique_ptr<T>` over bare pointers whenever possible.
-  - `std::shared_ptr<T>` is only used when there isn't an obvious class that can own the data.
+  - `std::shared_ptr<T>` is only used when there isn't an obvious owner for the memory.
 - Use `auto` in variable declarations when appropriate.
   - Generally this applies to long, complicated or templated type names and in all for-iterator loops.
 - Embrace const correctness.
 - Similarly, prefer `std::string_view` over `const std::string &`.
-- Do not use const references with the Irrlicht vector types (`v3f`, `v3s16` et al). Transferring these by value is generally more efficient and in many cases the vectors themselves are smaller than a pointer (8 bytes on 64-bit platforms).
+- Do not use const references with the Irrlicht vector types (`v3f`, `v3s16` et al).
+  Transferring these by value is generally more efficient and in many cases the vectors themselves are smaller than a pointer (8 bytes on 64-bit platforms).
 
 ### Classes
 
