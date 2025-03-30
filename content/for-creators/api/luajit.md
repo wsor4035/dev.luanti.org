@@ -2,6 +2,7 @@
 title: LuaJIT
 aliases:
   - /luajit
+  - /for-creators/luajit-differences
   - /LuaJIT_differences
   - /luajit-differences
   - /content-dev/luajit-differences
