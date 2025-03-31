@@ -16,7 +16,7 @@ This Wiki page contains the meeting plans for upcoming meetings, and meeting not
 
 ## Upcoming Meetings
 
-## 2025-03-16
+## 2025-04-06
 
 **Remember to post meetings in the [GitHub discussions](https://github.com/orgs/luanti-org/discussions) in advance**
 
