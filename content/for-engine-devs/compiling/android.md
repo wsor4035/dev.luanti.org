@@ -63,6 +63,8 @@ cd luanti/android
 ./gradlew app:assembleDebug
 ```
 
+If the build is not working, try first cleaning the cache via `./gradlew clean` before building.
+
 _(If you're compiling on Windows, you can use the `gradle` command, so long as you install the additional Unix dependency [gettext](https://www.gnu.org/software/gettext/). Both of these are verified to work when installed by [Scoop](https://scoop.sh).)_
 
 This will produce a number of debug builds in the form of `.apk` files (depending on the enabled ABIs)
