@@ -684,7 +684,7 @@ Code details are intentionally omitted due to the changelog target audience's in
 - Fix macOS compile instructions (_sfan5_)
 - Various C++ code cleanups and improvements (_TurkeyMcMac_, _sfan5_, _Oblomov_, _SmallJoker_, _Octavian_, _RichardTry_, _savilli_, _JosiahWI_)
 - List of DevTest game improvements:
-  - TGA test nodes (_ehrlemann_)
+  - TGA test nodes (_erle_)
   - Test weapons and armorball modes (_Wuzzy_)
   - Nodes and items for testing overlays (_Wuzzy_)
   - Entity lifecycle and callbacks (_sfan5_)
