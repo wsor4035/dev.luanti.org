@@ -24,7 +24,7 @@ Add your points here. Most important comes first.
 
 **Organization Discussion**
 
-- foo
+- Feature freeze time: I suggest doing it now and err on the side of caution, keeping the feature PRs in the milestone and releasing a RC in the next meeting (Zughy)
 
 **PR discussion/reviews**
 
