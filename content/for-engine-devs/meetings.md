@@ -25,6 +25,7 @@ Add your points here. Most important comes first.
 **Organization Discussion**
 
 - Feature freeze time: I suggest doing it now and err on the side of caution, keeping the feature PRs in the milestone and releasing a RC in the next meeting (Zughy)
+- Release schedule shift to accommodate game jam schedule (proposed: keep May release, lightweight release in July, continue 3-month from there)
 
 **PR discussion/reviews**
 
