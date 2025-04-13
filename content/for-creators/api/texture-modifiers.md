@@ -55,7 +55,7 @@ The only texture modifier utility function provided.
 
 **Arguments:**
 
-- `top`, `left`, `right` - `{type-string}`: Texture modifiers for the respective node faces
+- `top`, `left`, `right` - string: Texture modifiers for the respective node faces
 
 **Returns:**
 
@@ -63,17 +63,17 @@ The only texture modifier utility function provided.
 
 ### String Notations
 
-Lua provides three string notations: Quoted (single or double) and long. The type of quotes doesn't really matter, as texture names shouldn't include either type of quotes anyway. Keep in mind that to encode a backslash in quoted strings, you have to escape it with another backslash: `+a.png^[mask:b.png\^c.png+` would be encoded as `+"a.png^[mask:b.png\\^c.png"+` using double quotes.
+Lua provides three string notations: Quoted (single or double) and long. The type of quotes doesn't really matter, as texture names shouldn't include either type of quotes anyway. Keep in mind that to encode a backslash in quoted strings, you have to escape it with another backslash: `a.png^[mask:b.png\^c.png` would be encoded as `"a.png^[mask:b.png\\^c.png"` using double quotes.
 
 Long strings enclose their content with two pairs of square brackets (`[]`) with a matching number of equals signs (`=`) between the two brackets of each pair:
 
-\[\[...\]\] and `[===[...]===]` are examples of valid long strings.
+`[[...]]` and `[===[...]===]` are examples of valid long strings.
 
 Within them, no escaping applies, which means that texture modifiers can be written down literally;
 a leading square bracket such as that of a generating texture modifier is not a problem.
-Example: +\[\[\[`combine:1x1:0,0=a.png`\]\]+.
+Example: `[[[combine:1x1:0,0=a.png]]`.
 
-Using equals signs is never necessary since texture modifiers won't contain \[\[ or \]\].
+Using equals signs is never necessary since texture modifiers won't contain `[[` or `]]`.
 
 {{< notice tip >}}
 You can use metamethods in order to implement a neat, possibly OOP-ish Lua DSL that does the escaping and formatting for you.
@@ -99,11 +99,11 @@ All ranges denoted below are inclusive (i.e. `0` to `10` contains both `0` and `
 
 ### Overlaying
 
-Overlaying is a binary operator using the exponentiation symbol (`+^+`).
+Overlaying is a binary operator using the exponentiation symbol (`^`).
 
 The right-hand operand is overlaid over the left-hand operand.
 
-Overlaying is associative: `+<a>^<b>^<c>+` is the same as both `+(<a>^<b>)^<c>+` and `+<a>^(<b>^<c>)+`.
+Overlaying is associative: `<a>^<b>^<c>` is the same as both `(<a>^<b>)^<c>` and `<a>^(<b>^<c>)`.
 
 Before overlaying, the texture with the lower pixel count is upscaled to the dimensions of the texture with the higher pixel count.
 
@@ -111,15 +111,15 @@ Alpha blending is applied correctly.
 
 ### Argument Escaping
 
-Argument escaping uses the backslash (`+\+`). It is only allowed within "combining" texture modifiers.
+Argument escaping uses the backslash (`\`). It is only allowed within "combining" texture modifiers.
 
-_All characters can be escaped_; only a few (`+^+`, `:` & `+\+`) must be escaped to allow the use of texture modifiers as arguments (not base images) within combining texture modifiers.
+_All characters can be escaped_; only a few (`^`, `:` & `\`) must be escaped to allow the use of texture modifiers as arguments (not base images) within combining texture modifiers.
 
-Nested escaping is possible; escape each backslash with a backslash for this, doubling the amount of backslashes: Nesting to a depth of `n` requires stem:[2^n] backslashes per character to be escaped.
+Nested escaping is possible; escape each backslash with a backslash for this, doubling the amount of backslashes: Nesting to a depth of `n` requires `2^n` backslashes per character to be escaped.
 
 The `inventorycube` texture modifier uses a different form of escaping for its arguments:
 
-`+^+` is replaced with `&`. `core.inventorycube(top, left, right)` performs this escaping. It is not possible to nest the `inventorycube` texture modifier within itself as it uses curly braces (`{`) for separating its arguments but does not provide a way of escaping them.
+`^` is replaced with `&`. `core.inventorycube(top, left, right)` performs this escaping. It is not possible to nest the `inventorycube` texture modifier within itself as it uses curly braces (`{`) for separating its arguments but does not provide a way of escaping them.
 
 Example escaping implementation:
 
@@ -135,16 +135,16 @@ The operands of the overlaying operator may be enclosed within parentheses to fo
 
 Grouping can not be used to use texture modifiers within combining texture modifiers; grouping will be ignored for delimiting purposes. You must use escaping for that.
 
-Wrong: `+a^[lowpart:1:(b^c)+`, right: `+a^[lowpart:1:b\^c+`.
+Wrong: `a^[lowpart:1:(b^c)`, right: `a^[lowpart:1:b\^c`.
 
-Also wrong: `+[combine:1x2:0,0=(a^b):0,1=(c^[multiply:red)+` - the combine parsing will ignore the parentheses and misinterpret the colon `:` before `red` as a delimiter for combine.
+Also wrong: `[combine:1x2:0,0=(a^b):0,1=(c^[multiply:red)` - the combine parsing will ignore the parentheses and misinterpret the colon `:` before `red` as a delimiter for combine.
 
-`+[combine:1x2:0,0=(a^b):0,1=(c^d)+` will work, but you shouldn't rely on it.
+`[combine:1x2:0,0=(a^b):0,1=(c^d)` will work, but you shouldn't rely on it.
 
 Grouping can however be used to enclose combining texture modifiers, separating them from the containing texture modifier.
 
 {{< notice tip >}}
-Use grouping for evaluating parts of the right-hand side first, like this: `+a^[multiply:green^(b^[multiply:red)+`
+Use grouping for evaluating parts of the right-hand side first, like this: `a^[multiply:green^(b^[multiply:red)`
 {{< /notice >}}
 
 ### Modifiers
@@ -168,17 +168,17 @@ The following texture modifiers are considered "combining", as they operate by c
 
 These texture modifiers all modify a base texture `<base>`, which may in turn consist of texture modifiers.
 
-##### `+<base>^[brighten+`
+##### `<base>^[brighten`
 
 Interpolates 50-50 between the color of each pixel of the base texture and white.
 
-##### `+<base>^[noalpha+`
+##### `<base>^[noalpha`
 
 Sets the alpha channel of the base texture to full (`255`).
 
 As the red, green and blue channels aren't premultiplied with alpha in PNGs, this might reveal hidden colors of otherwise transparent portions of an image.
 
-##### `+<base>^[makealpha:<r>,<g>,<b>+`
+##### `<base>^[makealpha:<r>,<g>,<b>`
 
 - `r`, `g`, `b` are integers ranging from `0` to `255`.
 
@@ -186,19 +186,19 @@ Pixels of the base texture having the exact same RGB color will have their alpha
 
 As the red, green and blue channels are kept, the original color can be restored using `[noalpha` (which will however also make originally semitransparent portions of the image opaque).
 
-##### `+<base>^[opacity:<ratio>+`
+##### `<base>^[opacity:<ratio>`
 
 - `ratio` is an integer ranging from `0` to `255`
 
 Multiplies the alpha value of each pixel of the base texture with `ratio/255` and rounds properly afterwards.
 
-##### `+<base>^[invert:<mode>+`
+##### `<base>^[invert:<mode>`
 
 - `mode` is a string which may contain the characters `r`, `g`, `b` and `a`.
 
 The channels corresponding to the occurring characters (red, green, blue and alpha) will be inverted (set to `255 - value`).
 
-##### `+<base>^[transform<transforms>+`
+##### `<base>^[transform<transforms>`
 
 `<transforms>` is the concatenation of either numbers or names identifying transformations from the following table:
 
@@ -215,7 +215,7 @@ The channels corresponding to the occurring characters (red, green, blue and alp
 
 Transformation names are case insensitive.
 
-##### `+<base>^[verticalframe:<framecount>:<frame>+`
+##### `<base>^[verticalframe:<framecount>:<frame>`
 
 - `framecount`: Animation frame count
 - `frame`: Current animation frame, 0-indexed
@@ -226,7 +226,7 @@ Result: Vertically crops the texture by dividing the base texture height through
 Specifying a `framecount` of `0` will trigger a floating point exception, crashing the client.
 {{< /notice >}}
 
-##### `+<base>^[crack[<opacity>]:[<framecount>:]<tilecount>:<frame>+`
+##### `<base>^[crack[<opacity>]:[<framecount>:]<tilecount>:<frame>`
 
 Shorthand for overlaying a scaled frame of the crack texture, `crack_anylength.png`,
 over a texture, with options for alpha and blitting on all frames.
@@ -240,20 +240,20 @@ over a texture, with options for alpha and blitting on all frames.
 This always scales the crack to the size of the base texture (or the tiles of the base texture, if `tilesize` is provided).
 {{< /notice >}}
 
-##### `+<base>^[sheet:<w>x<h>:<x>,<y>+`
+##### `<base>^[sheet:<w>x<h>:<x>,<y>`
 
 - `w`, `h`: Tile sheet dimensions (positive integers, in tiles)
 - `x`, `y`: Tile position, 0-indexed (in tiles)
 
 Retrieves the tile at position `x`, `y`.
 
-##### `+<base>^[multiply:<color>+`
+##### `<base>^[multiply:<color>`
 
 - `color` is a `ColorString`
 
 Multiplies the RGB values of the base texture per pixel with the RGB values of `color`; the alpha value of `color` is ignored.
 
-##### `+<base>^[colorize:<color>[:<ratio>]+`
+##### `<base>^[colorize:<color>[:<ratio>]`
 
 - `color` is a `ColorString`
 - `ratio` is an optional integer from `0` to `255` or the string `alpha`
@@ -265,7 +265,7 @@ Interpolates between `color` and the pixel colors of the base texture as specifi
   The resulting color of a pixel is `ratio` times `color` plus `(255 - ratio)` times pixel color;
 - If it is the string `alpha`, the texture pixel's alpha value determines the `ratio` per pixel
 
-##### `+<base>^[mask:<texture>+`
+##### `<base>^[mask:<texture>`
 
 - `texture` is an escaped texture modifier
 
@@ -277,7 +277,7 @@ If a pixel of the base texture is out of bounds on `texture`, it is preserved.
 
 Masking is associative and commutative if all involved textures have the same dimensions.
 
-##### `+<base>^[lowpart:<percent>:<texture>+`
+##### `<base>^[lowpart:<percent>:<texture>`
 
 - `percent` is an integer from `0` to `100`
 - `texture` is an escaped texture modifier
@@ -307,7 +307,7 @@ end
 ```
 
 {{< notice warning >}}
-Not supported by Luanti 5.4 and older clients. May lead to client crashes if used in node tiles. Luanti 5.5 and newer servers will automatically prepend `+blank.png^+` to `[png` tiles to mitigate this.
+Not supported by Luanti 5.4 and older clients. May lead to client crashes if used in node tiles. Luanti 5.5 and newer servers will automatically prepend `blank.png^` to `[png` tiles to mitigate this.
 {{< /notice >}}
 
 {{< notice warning >}}
@@ -344,16 +344,16 @@ Renders a cube with the three given textures using simple software rendering.
 
 The resulting image will be 9 times the nearest power of 2 large enough to contain the dimensions of the largest image, clamped to a range of at least 4 and at most 64.
 
-As a formula: stem:[9 * max(4, min(64, 2^ceil(log_2(max(d)))))] where stem:[d] is the set of dimensions (width & height) of all faces.
+As a formula: `9 * max(4, min(64, 2^ceil(log_2(max(d)))))` where `d` is the set of dimensions (width & height) of all faces.
 
 ## Examples
 
 ### Cracked Nodes
 
-- Cracked Stone: `+default_stone.png^[crack:1:2+`
+- Cracked Stone: `default_stone.png^[crack:1:2`
   - Use the third crack progression (`2` if 0-indexed)...
   - ... and draw it on a stone texture consisting of `1` tile
-- Cracked Lava: `+default_lava_source_animated.png^[crack:1:8:2+`
+- Cracked Lava: `default_lava_source_animated.png^[crack:1:8:2`
   - The `default_lava_source_animated.png` texture has `8` animated vertical frames...
   - ... and exactly `1` "tile" horizontally (frames are not tiles)
 
@@ -374,13 +374,13 @@ Combine or lowpart and rotate (the latter more TP-agnostic)
 
 The below examples use `progress_bar.png` & `progress_bar_bg.png` from Luanti's base textures, both 256x48.
 
-- Using nested `combine`s: `+[combine:256x48:0,0=progress_bar_bg.png:0,0=[combine\:128x48\:0,0=progress_bar.png+`
+- Using nested `combine`s: `[combine:256x48:0,0=progress_bar_bg.png:0,0=[combine\:128x48\:0,0=progress_bar.png`
   - First crop the foreground to its left half (`128` of `256` pixels); escape this
   - Then create a new blank image with the progress bar resolution, blit the background and after that the cropped foreground
   - _Downside: Heavily resolution-dependent_; making it (mostly) resolution-independent requires (up)scaling textures first
-- Using `lowpart` and `transform` to rotate: `+progress_bar_bg.png^[transformR90^[lowpart:50:progress_bar.png\^[transformR90^[transformR270+`
+- Using `lowpart` and `transform` to rotate: `progress_bar_bg.png^[transformR90^[lowpart:50:progress_bar.png\^[transformR90^[transformR270`
   - First take the background (horizontal) and rotate it by 90° counterclockwise to orient it vertically
-  - Now do the same for the foreground, again to convert horizontal into vertical orientation; escape this (`+\^+`)
+  - Now do the same for the foreground, again to convert horizontal into vertical orientation; escape this (`\^`)
   - Use the rotated foreground as argument to `lowpart`; blit `50` % of the vertical foreground on the vertical background
   - Rotate everything by 270° to undo the vertical orientation
   - _Advantage over using `combine`_: Due to the usage of `lowpart`, this is resolution-agnostic (will work with texture packs of different resolutions)
