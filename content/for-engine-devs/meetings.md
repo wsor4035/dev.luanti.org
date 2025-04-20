@@ -16,7 +16,7 @@ This Wiki page contains the meeting plans for upcoming meetings, and meeting not
 
 ## Upcoming Meetings
 
-## 2025-04-06
+## 2025-04-20
 
 **Remember to post meetings in the [GitHub discussions](https://github.com/orgs/luanti-org/discussions) in advance**
 
@@ -24,8 +24,7 @@ Add your points here. Most important comes first.
 
 **Organization Discussion**
 
-- Feature freeze time: I suggest doing it now and err on the side of caution, keeping the feature PRs in the milestone and releasing a RC in the next meeting (Zughy)
-- Release schedule shift to accommodate game jam schedule (proposed: keep May release, lightweight release in July, continue 3-month from there)
+- Feature freeze time (Zughy)
 
 **PR discussion/reviews**
 
@@ -36,6 +35,15 @@ Also consider:
 - ["One Approval" PRs](https://github.com/luanti-org/luanti/pulls?q=is%3Apr+is%3Aopen+label%3A%22One+approval+%E2%9C%85+%E2%97%BB%EF%B8%8F%22) and decide on whether to merge, request changes or close.
 
 ## Past Meetings
+
+## 2025-04-06
+
+**Organization Discussion**
+
+- Feature freeze time: I suggest doing it now and err on the side of caution, keeping the feature PRs in the milestone and releasing a RC in the next meeting (Zughy)
+  - Let's do it in the next meeting
+- Release schedule shift to accommodate game jam schedule (proposed: keep May release, lightweight release in July, continue 3-month from there)
+  - Undecided
 
 ## 2025-01-19
 
