@@ -16,7 +16,7 @@ This Wiki page contains the meeting plans for upcoming meetings, and meeting not
 
 ## Upcoming Meetings
 
-## 2025-04-20
+## 2025-05-04
 
 **Remember to post meetings in the [GitHub discussions](https://github.com/orgs/luanti-org/discussions) in advance**
 
@@ -24,7 +24,7 @@ Add your points here. Most important comes first.
 
 **Organization Discussion**
 
-- Feature freeze time (Zughy)
+- foo
 
 **PR discussion/reviews**
 
@@ -35,6 +35,13 @@ Also consider:
 - ["One Approval" PRs](https://github.com/luanti-org/luanti/pulls?q=is%3Apr+is%3Aopen+label%3A%22One+approval+%E2%9C%85+%E2%97%BB%EF%B8%8F%22) and decide on whether to merge, request changes or close.
 
 ## Past Meetings
+
+## 2025-04-20
+
+**Organization Discussion**
+
+- Feature freeze time (Zughy)
+  - Time to sort out a few feature PRs and then we'll go into feature freeze
 
 ## 2025-04-06
 
