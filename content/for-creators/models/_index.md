@@ -25,14 +25,28 @@ Alternative to b3d that supports animations. Unless you have a specific reason, 
 
 ### `.gltf / .glb` Format
 
-Modern animation model support, added in release 5.10. Using this format means you can't (easily) support versions before 5.10. See <https://forum.luanti.org/viewtopic.php?t=31133> regarding exporting from blender at this time.
+Modern animated model support, added in release 5.10. Using this format means you can't (easily) support versions before 5.10. See [this forum topic](https://forum.luanti.org/viewtopic.php?t=31133) regarding exporting from Blender at this time.
 
-Models stored in this format are expected to use a size of [10.0](https://github.com/luanti-org/luanti/blob/master/src/constants.h#L61) for a single node centered around (0.0, 0.0, 0.0). This means a full node extends from (-5.0, -5.0, -5.0) to (5.0, 5.0, 5.0).
+Models stored in this format are expected to use a size of 10 units for a single node centered around (0, 0, 0). This means a full node extends from (-5, -5, -5) to (5, 5, 5).
+
+{{< notice tip >}}
+If a model does not work as expected, you can use the [glTF validator](https://github.khronos.org/glTF-Validator/) to check it for [glTF specification](https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html) compliance.
+{{< /notice >}}
+
+{{< notice tip >}}
+Luanti does not support embedded images in glTF models. You can use [gltfutil](https://github.com/luanti-org/modtools/blob/main/gltfutil.py) to extract or strip textures.
+{{< /notice >}}
+
+{{< notice note >}}
+In contrast to `.b3d` and `.x`, glTF animation speeds are typically in seconds rather than frames.
+When exporting, make sure to use the correct frame rate setting.
+When using glTF models in Luanti, you will normally want to use a speed of `1`.
+{{< /notice >}}
 
 ### Node Boxes Format
 
 {{< notice note >}}
-This Format is only supported for nodes.
+This format is only supported for nodes.
 {{< /notice >}}
 
 See https://api.luanti.org/nodes/#node-boxes.
