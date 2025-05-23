@@ -94,8 +94,7 @@ This consists of:
 
 ### Update website credits
 
-Once the credits are decided on in the previous step, update the website to be in sync with the mainmenu. Simply copy the same `credits.json` to here: [https://github.com/luanti-org/luanti.github.io/tree/master/\_data](https://github.com/luanti-org/luanti.github.io/tree/master/_data)
-
+Once the credits are decided on in the previous step, update the website to be in sync with the mainmenu. Simply copy the same `credits.json` to here: https://github.com/luanti-org/luanti-org.github.io/tree/master/_data
 ### Update changelog
 
 Update [the changelog](/about/changelog).
