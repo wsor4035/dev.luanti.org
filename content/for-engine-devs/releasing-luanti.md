@@ -3,6 +3,8 @@ title: Releasing Luanti
 aliases:
   - /Releasing_Luanti
   - /releasing-luanti
+  - /Releasing_Minetest
+  - /releasing-minetest
   - /engine-dev-process/releasing-luanti
 ---
 
