@@ -15,7 +15,7 @@ In addition to this list, you can also see the [Development Tools](https://conte
 ## Engine development
 
 - Development Test: A testing game for testing various engine features
-- [/minetest/util](https://github.com/luanti-org/luanti/tree/master/util): Various maintenance utilities
+- [/luanti/util](https://github.com/luanti-org/luanti/tree/master/util): Various maintenance utilities
 
 ## General Lua Tools
 
@@ -54,6 +54,13 @@ In addition to this list, you can also see the [Development Tools](https://conte
 
 - [Blender](https://www.blender.org/): Essential for making animated models in Luanti, see [Using Blender](/for-creators/models/using-blender/).
 - [Blockbench](https://www.blockbench.net/): Useful for making static voxel models for Luanti, see [Using Blockbench](/using-blockbench/).
+
+## Images
+
+- [optipng](https://optipng.sourceforge.net/): Lossless PNG compressor
+- [pngcrush](https://pmt.sourceforge.io/pngcrush/): Lossless PNG compressor
+- [pngquant](https://pngquant.org/): *Lossy* PNG compressor
+- [guetzli](https://github.com/google/guetzli): JPG compressor
 
 ## Formspecs
 
