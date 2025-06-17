@@ -13,7 +13,7 @@ aliases:
 
 # Contributing to Docs
 
-Luanti Documentation is written in Markdown and transformed into HTML by [Hugo](https://gohugo.io), a free and open-source static site generator. The source code is currently hosted on GitHub and deployed with GitHub Actions. The look and feel of the site is primarily driven by the Hugo Book (HB) theme, with changes applied as described in [HB's readme](https://github.com/alex-shpak/hugo-book#hugo-book-theme).
+Luanti Documentation is written in Markdown and transformed into HTML by [Hugo](https://gohugo.io), a free and open-source static site generator. The source code is currently hosted on GitHub and deployed with GitHub Actions.
 
 ## Local Development
 
