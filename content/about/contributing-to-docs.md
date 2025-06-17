@@ -121,7 +121,7 @@ If you move or rename a Markdown file, add an [`aliases`](https://gohugo.io/cont
 - Use webp images instead of jpg, png, or others
 - Add a [language](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) to code blocks
 
-### Merge policies
+### Merge Policies
 
 Please announce changes (in optional minutes) in the #luanti-docs IRC/Discord/Matrix channel
 
