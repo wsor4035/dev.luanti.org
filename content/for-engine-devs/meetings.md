@@ -16,7 +16,7 @@ This Wiki page contains the meeting plans for upcoming meetings, and meeting not
 
 ## Upcoming Meetings
 
-## 2025-06-15
+## 2025-06-29
 
 **Remember to post meetings in the [GitHub discussions](https://github.com/orgs/luanti-org/discussions) in advance**
 
@@ -24,7 +24,19 @@ Add your points here. Most important comes first.
 
 **Organization Discussion**
 
+- It's the estimated FF + 5.13 RC (Zughy)
+
+**PR discussion/reviews**
+
 - foo
+
+Also consider:
+
+- ["One Approval" PRs](https://github.com/luanti-org/luanti/pulls?q=is%3Apr+is%3Aopen+label%3A%22One+approval+%E2%9C%85+%E2%97%BB%EF%B8%8F%22) and decide on whether to merge, request changes or close.
+
+## Past Meetings
+
+## 2025-06-15
 
 **PR discussion/reviews**
 
@@ -33,12 +45,6 @@ Add your points here. Most important comes first.
   and [#14129](https://github.com/luanti-org/luanti/pull/14129) should continue with passwords stored in plain text.
 - The original author of [#13811](https://github.com/luanti-org/luanti/pull/13811) introduced a `class BitField` -> see [here](https://github.com/luanti-org/luanti/pull/13811/files#diff-2be35250aa71dc4852f4955c67e13cabe131c20b7373cc92385484b391aa8f62).
   If we like this class, we could create a separate PR for it and review and merge it before #13811, so that the latter will be smaller and easier to review.
-
-Also consider:
-
-- ["One Approval" PRs](https://github.com/luanti-org/luanti/pulls?q=is%3Apr+is%3Aopen+label%3A%22One+approval+%E2%9C%85+%E2%97%BB%EF%B8%8F%22) and decide on whether to merge, request changes or close.
-
-## Past Meetings
 
 ## 2025-05-16
 
