@@ -28,7 +28,8 @@ Add your points here. Most important comes first.
 
 **PR discussion/reviews**
 
-- foo
+- https://github.com/luanti-org/luanti/issues/14135 for 5.13?
+- discuss PRs and issues in 5.13 milestone
 
 Also consider:
 
