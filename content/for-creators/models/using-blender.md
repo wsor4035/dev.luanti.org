@@ -282,6 +282,8 @@ OBJ file support is built into most known versions of Blender, so just use the p
 Make \*sure\* that you check to export the material groups when saving as OBJ, otherwise any models with multiple materials will not texture properly inside Luanti. See: [forum thread](https://forum.luanti.org/viewtopic.php?t=22990).
 
 There is no need to write the MTL file as Luanti will not parse it.
+However, writing it may be necessary to work around [a Blender export bug](https://projects.blender.org/blender/blender/issues/127542)
+(fixed in Blender 4.4+) where Blender would not write material groups otherwise.
 
 ### Exporting B3D
 
