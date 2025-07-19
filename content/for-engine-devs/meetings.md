@@ -16,7 +16,7 @@ This Wiki page contains the meeting plans for upcoming meetings, and meeting not
 
 ## Upcoming Meetings
 
-## 2025-06-29
+## 2025-07-27
 
 **Remember to post meetings in the [GitHub discussions](https://github.com/orgs/luanti-org/discussions) in advance**
 
@@ -24,11 +24,10 @@ Add your points here. Most important comes first.
 
 **Organization Discussion**
 
-- It's the estimated FF + 5.13 RC (Zughy)
+- Release 5.13 and skip RC since we're two weeks late (Zughy)
 
 **PR discussion/reviews**
 
-- https://github.com/luanti-org/luanti/issues/14135 for 5.13?
 - discuss PRs and issues in 5.13 milestone
 
 Also consider:
@@ -36,6 +35,18 @@ Also consider:
 - ["One Approval" PRs](https://github.com/luanti-org/luanti/pulls?q=is%3Apr+is%3Aopen+label%3A%22One+approval+%E2%9C%85+%E2%97%BB%EF%B8%8F%22) and decide on whether to merge, request changes or close.
 
 ## Past Meetings
+
+## 2025-06-29
+
+**Organization Discussion**
+
+- It's the estimated FF + 5.13 RC (Zughy)
+  - Not happening
+
+**PR discussion/reviews**
+
+- https://github.com/luanti-org/luanti/issues/14135 for 5.13?
+  - Merged
 
 ## 2025-06-15
 
