@@ -1,5 +1,5 @@
 ---
-title: Luanti `.obj` file format specification
+title: Luanti .obj file format specification
 ---
 
 # Luanti `.obj` file format specification
