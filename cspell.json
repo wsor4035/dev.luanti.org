@@ -890,6 +890,7 @@
     "upvaluejoin",
     "Upvalues",
     "urandom",
+    "usemtl",
     "userlimit",
     "valgrind",
     "Valkey",
