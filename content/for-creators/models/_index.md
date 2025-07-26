@@ -9,7 +9,7 @@ bookCollapseSection: true
 
 Luanti supports a few different model formats. An overview including recommendations is given below.
 
-See ["Using Blender"](/for-creators/models/using-blender) and ["Using Blockbench"](/for-creators/models/blockbench) for information on how to create models.
+See ["Using Blender"](/for-creators/models/using-blender) and ["Using Blockbench"](/for-creators/models/using-blockbench) for information on how to create models.
 
 ## General considerations
 
