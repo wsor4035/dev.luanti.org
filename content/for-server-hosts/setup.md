@@ -261,6 +261,6 @@ See the [privileges](/for-players/privileges) page for detailed information on t
 
 ## See also
 
-- If your server has lots of media it may be useful to set up a [remote media server](Remote_Media) for it.
+- If your server has lots of media it may be useful to set up a [remote media server](/for-server-hosts/remote-media) for it.
 - The "[Illustrated Server Creation Guide](https://forum.luanti.org/viewtopic.php?f=10&t=2870)" forum thread contains interesting discussion.
 - See this forum thread for [Server performance settings](https://forum.luanti.org/viewtopic.php?f=10&t=1825)
