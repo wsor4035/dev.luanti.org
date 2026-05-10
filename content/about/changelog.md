@@ -11,6 +11,17 @@ aliases:
 Note that not all changes made to the code between releases are listed here. Fixes to bugs that were introduced after the previous release, small internal changes, code style fixes, and changes of the like are not listed.
 If you want a list of _every_ change made between releases see the [commit log](https://github.com/luanti-org/luanti/commits/master).
 
+
+## 5.16.0 → 5.16.1
+
+**[Release](https://github.com/luanti-org/luanti/releases/tag/5.16.1)**
+
+Released on 10 May 2026.
+
+### Client / Audiovisuals
+- Flowing liquids are again rendered correctly.
+
+
 ## 5.15.0 → 5.16.0
 
 **[Release](https://github.com/luanti-org/luanti/releases/tag/5.16.0)**
