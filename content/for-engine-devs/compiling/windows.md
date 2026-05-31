@@ -4,6 +4,6 @@ aliases:
   - /compiling-on-windows-using-msys2/
   - /compiling/windows-msys2/
   - /compiling/windows
-layout: "redirect"
-redirect: https://github.com/luanti-org/luanti/blob/master/doc/compiling/windows_msys2.md
 ---
+
+{{% remote-md "https://raw.githubusercontent.com/luanti-org/luanti/refs/heads/master/doc/compiling/windows_msys2.md" %}}
