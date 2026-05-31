@@ -1,6 +1,5 @@
 ---
 title: Compiling on Windows
-bookHidden: true
 aliases:
   - /compiling-on-windows-using-msys2/
   - /compiling/windows-msys2/
