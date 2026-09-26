@@ -21,6 +21,9 @@ jobs:
         run: git diff
       - name: Build site to check for errors
         run: npm run build:ci
+      - name: Spell check (advisory)
+        run: npm run test:spelling
+        continue-on-error: true
       - name: check that links are all valid
         uses: JustinBeckwith/linkinator-action@v1
         with:

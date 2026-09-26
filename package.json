@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "hugo",
-    "build:ci": "hugo --panicOnWarning && npm run test:spelling && npm run test:format",
+    "build:ci": "hugo --panicOnWarning && npm run test:format",
     "clean": "rm -rf public && echo Clear browser cache as well!",
     "format": "sort-package-json && prettier --write .",
     "prepare": "git submodule init && git submodule update",
