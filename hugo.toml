@@ -9,3 +9,11 @@ enableGitInfo = true
     BookSection = '*'
     BookRepo = 'https://github.com/luanti-org/docs.luanti.org'
     BookEditPath = 'edit/master'
+
+[module]
+    [[module.mounts]]
+        source = 'content'
+        target = 'content'
+    [[module.mounts]]
+        source = 'external/flint/docs'
+        target = 'content/for-creators/flint'
