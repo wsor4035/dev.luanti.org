@@ -24,7 +24,7 @@ A chart is shown below with some links to various platforms, these should be use
 
 Solution | Pros | Cons | Examples
 -------- | ---- | ---- | --------
-Self Hosting | cheap* | expose your ip, not reliable | whatever you have lying around/ex office hardware
+Self Hosting | cheap* | expose your ip, not reliable | whatever you have lying around / ex office hardware
 vps | full control, reliable hardware and connection | cost | https://www.netcup.com/en/server https://contabo.com/en-us/vps/ https://www.hetzner.com/
 Saas | minimal setting up, maintance, gui provided | less control and configuration, potential lock-in | https://luanti.ch/pages/hosting/ https://pinehosting.com/minetest
 
