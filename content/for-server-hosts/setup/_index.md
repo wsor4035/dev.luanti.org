@@ -12,13 +12,37 @@ aliases:
 
 This page is a guide, separated into sections, for setting up a Luanti server. It assumes you want to run a server that is publicly facing the Internet, as compared to a LAN server if you want to play with players on the same network.
 
-## Choosing Hardware
+## Choosing a Platform
 
-It's recommended that you use a VPS or dedicated server to host a game server which you want to make publicly available. Residential Internet connections tend to be unreliable and also have less upload speed. You may also not be able to keep a server online 24/7 when hosting from home.
+It's widely recommended that you use a VPS or dedicated server to host a game server which you want to make publicly available. Residential Internet connections tend to be unreliable and also have less upload speed. You may also not be able to keep a server online 24/7 when hosting from home.
 
 That being said, hosting from home will work fine if you have some hardware you can keep online, and you have a good enough Internet connection. Keep in mind that if you are behind [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT), you are unable to host a public server from home at all as it won't be accessible to the wider internet.
 
 Luanti does have a _Host Server_ option in the main menu, which is fine for temporary servers for a couple of friends, but if you want to run a public server you would want to run it dedicated as it can be kept online independent of the client being active.
+
+A chart is shown below with some links to various platforms, these should be used as an example of what you might want, and is not an endorsement of any particular platform or solution. it is assumed that you will be using some level of pc/server hardware and mobile is excluded as it is quite a not recommended exotic solution.
+
+Solution | Pros | Cons | Examples
+-------- | ---- | ---- | --------
+Self Hosting | cheap* | expose your ip, not reliable | whatever you have lying around/ex office hardware
+vps | full control, reliable hardware and connection | cost | https://www.netcup.com/en/server https://contabo.com/en-us/vps/ https://www.hetzner.com/
+Saas | minimal setting up, maintance, gui provided | less control and configuration, potential lock-in | https://luanti.ch/pages/hosting/ https://pinehosting.com/minetest
+
+\* Assumes you already own hardware/can aquire for cheap, already pay for internet that you can reuse, and dont mind the minimal add to your power bill.
+
+## Choosing Hardware
+
+You can of course run luanti on rather terrible hardware, however these specs aim to be for around 10 players at once, on a reasonable and not demanding game+mods.
+
+cpu: at least 2 cores (preferable 4)[^1], luanti is heavily single core threaded (while this has improved somewhat in more recent versions, still is the case for most things), to the higher the cpu core clock speed, the better.
+
+[^1]: If turning on multiple threads for faster mapgen, you should have preferable 4-8, do note that multithread mapgen may not work with certain setups [#9357](https://github.com/luanti-org/luanti/issues/9357)
+
+ram: 4gb, should be enough, although note this number needs to scale if using a heavier game+mods (see mineclonia/voxelibre). also note if using luajit that it is compiled with [gc64](https://blog.openresty.com/en/luajit-gc64-mode/) so you can use all the memory, this should be enabled on most modern linux distros.
+
+storage: 30gb, use a ssd, preferably nvme drive. this will grow with time as your players explore and expand more of the map. to cut down on this being an issue you may want to [limit your map size](/for-players/world-boundaries/#changing-the-world-boundary) 
+
+network: 20mpbs, note you may need to raise this number if you adjust settings sending more map chunks, etc per player
 
 ## Your IP Address
 
