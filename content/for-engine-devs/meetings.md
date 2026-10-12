@@ -18,13 +18,29 @@ This Wiki page contains the meeting plans for upcoming meetings, and meeting not
 
 **Remember to post meetings in the [GitHub discussions](https://github.com/orgs/luanti-org/discussions) in advance**
 
-## Next meeting tbd
+## Topics for a non-release related meeting
 
 **PR discussion/reviews**
-- [Visual Effects Vol. 2](https://github.com/luanti-org/luanti/pull/15417) (get merged soon in dev cycle?)
+- [Visual Effects Vol. 2](https://github.com/luanti-org/luanti/pull/15417)
 
 **Issues**
 - decide between [curl websockets](https://github.com/luanti-org/luanti/issues/17432) and [luasockets](https://github.com/luanti-org/luanti/issues/10120)
+
+
+## 2026-10-14
+
+**Organization Discussion**
+- Define Feature Freeze period
+- Publish an RC build
+
+**PR discussion/reviews**
+- Decide on which [feature PRs](https://github.com/luanti-org/luanti/pulls?q=is%3Apr+state%3Aopen+label%3A%22Feature+%E2%9C%A8%22) to merge before Feature Freeze
+
+**Issues**
+- Any fix required for [regressions](https://github.com/luanti-org/luanti/issues?q=is%3Aissue+state%3Aopen+label%3ARegression)?
+
+Also consider:
+- ["One Approval" PRs](https://github.com/luanti-org/luanti/pulls?q=is%3Apr+is%3Aopen+label%3A%22One+approval+%E2%9C%85+%E2%97%BB%EF%B8%8F%22) and decide on whether to merge, request changes or close.
 
 ## 2026-08-02
 
@@ -43,9 +59,6 @@ Add your points here. Most important comes first.
 
 **Issues**
 - what do we do about [Severe rendering regression when array textures are used](https://github.com/luanti-org/luanti/issues/16896)? apply the hotfix for another release?
-
-Also consider:
-- ["One Approval" PRs](https://github.com/luanti-org/luanti/pulls?q=is%3Apr+is%3Aopen+label%3A%22One+approval+%E2%9C%85+%E2%97%BB%EF%B8%8F%22) and decide on whether to merge, request changes or close.
 
 ## Past Meetings
 
@@ -79,9 +92,6 @@ Add your points here. Most important comes first.
 - [Add 2d, maybe 4d vectors to Lua API](https://github.com/luanti-org/luanti/issues/16921)
   - Question of direction/scope
 
-Also consider:
-- ["One Approval" PRs](https://github.com/luanti-org/luanti/pulls?q=is%3Apr+is%3Aopen+label%3A%22One+approval+%E2%9C%85+%E2%97%BB%EF%B8%8F%22) and decide on whether to merge, request changes or close.
-
 ## 2026-01-31 (FOSDEM)
 
 * Pizza
@@ -98,9 +108,6 @@ Add your points here. Most important comes first.
 **PR discussion/reviews**
 - decide which feature PRs to still get into 5.15.0 (if any)
 
-Also consider:
-- ["One Approval" PRs](https://github.com/luanti-org/luanti/pulls?q=is%3Apr+is%3Aopen+label%3A%22One+approval+%E2%9C%85+%E2%97%BB%EF%B8%8F%22) and decide on whether to merge, request changes or close.
-
 ## 2025-10-05
 **Organization Discussion**
 - Release Candidate/5.14? (Zughy)
@@ -116,7 +123,7 @@ Also consider:
 
 **Organization Discussion**
 - FF now and RC on September 21 (Zughy)
-  - Not happening, maybe next meeting 
+  - Not happening, maybe next meeting
 
 ## 2025-07-27
 
