@@ -30,8 +30,9 @@ This Wiki page contains the meeting plans for upcoming meetings, and meeting not
 ## 2026-10-14
 
 **Organization Discussion**
-- Define Feature Freeze period
-- Publish an RC build
+- Define Feature Freeze period: 2026-10-17 until 2026-11-01.
+  - Publish an RC build when entering Feature Freeze
+  - Any open Feature Pull Requests will then be moved to 5.19.0.
 
 **PR discussion/reviews**
 - Decide on which [feature PRs](https://github.com/luanti-org/luanti/pulls?q=is%3Apr+state%3Aopen+label%3A%22Feature+%E2%9C%A8%22) to merge before Feature Freeze
