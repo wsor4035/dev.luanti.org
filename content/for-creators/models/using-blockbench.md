@@ -51,7 +51,7 @@ Luanti has a rather basic built-in model format for nodes consisting of a list o
 
 There is no direct nodebox export option in Blockbench, but as it allows you to add, move and scale cubes it is easy to use it to visualise a nodebox and manually convert it into nodebox coordinates.
 
-You can also use the [objtonodebox](https://github.com/regulus79/objtonodebox) Python script which can take an .obj model and convert it into a nodebox definition. Simply export your nodebox to .obj from Blockbench and run it through the `convert.py` script.
+You can also use the [objtonodebox](https://github.com/regulus79/objtonodebox) Python script which can take an .obj model and convert it into a nodebox definition. Simply export your nodebox to .obj from Blockbench and run it through the `convert.py` script. Alternatively flint [provides this functionality](/for-creators/flint/convert/#obj-to-node-box).
 
 ## Animated models
 
